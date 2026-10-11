@@ -1,0 +1,1209 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposta Comercial | JH Company – Gestão de Tráfego Pago</title>
+<meta name="description" content="Marketing Digital – Proposta Comercial. Gestão de Tráfego Pago para Negócios Locais e Prestadores de Serviços.">
+<link rel="icon" href="img/jh-circulo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-dark:#141414;
+  --bg-light:#f6f7f9;
+  --ink:#1a1a1a;
+  --muted:#737373;
+  --blue:#0284c5;
+  --blue-light:#00abf5;
+  --green-1:#16a249;
+  --green-2:#22c35d;
+  --border-dark:rgba(255,255,255,.1);
+  --shadow-card:0 8px 30px -6px rgba(36,51,66,.12),0 2px 8px -2px rgba(36,51,66,.08);
+  --shadow-accent:0 8px 32px -8px rgba(28,202,91,.45);
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg-light);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:'Poppins','Inter',system-ui,sans-serif;line-height:1.15;letter-spacing:-.01em}
+b,strong{font-weight:700}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+
+/* ---------- seções ---------- */
+section{position:relative;overflow:hidden;isolation:isolate;padding:104px 0}
+.dark{background:var(--bg-dark);color:#fff}
+.light{background:var(--bg-light);color:var(--ink)}
+.dark::before,.light::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
+.dark::before{background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:56px 56px;
+  -webkit-mask:radial-gradient(ellipse 80% 70% at 50% 40%,#000 30%,transparent 100%);mask:radial-gradient(ellipse 80% 70% at 50% 40%,#000 30%,transparent 100%)}
+.light::before{background-image:radial-gradient(rgba(2,132,197,.12) 1px,transparent 1.4px);background-size:26px 26px;
+  -webkit-mask:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent);mask:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent)}
+.glow{position:absolute;z-index:-1;border-radius:50%;filter:blur(90px);pointer-events:none}
+.glow.b{background:rgba(0,171,245,.14)}
+.glow.g{background:rgba(34,195,93,.08)}
+.light .glow.b{background:rgba(2,132,197,.08)}
+.divider{width:96px;height:4px;border-radius:4px;background:var(--blue);margin:0 auto 56px}
+
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:2.4px;text-transform:uppercase;color:var(--blue)}
+.dark .eyebrow{color:var(--blue-light)}
+.h2{font-size:clamp(30px,4vw,48px);font-weight:700;margin-top:10px}
+.hl{color:var(--blue)}
+.dark .hl{color:var(--blue-light)}
+.lead{font-size:18px;line-height:1.65;color:var(--muted)}
+.dark .lead{color:rgba(255,255,255,.75)}
+.head{text-align:center;max-width:820px;margin:0 auto 56px}
+.mark{color:var(--blue);font-weight:600}
+.dark .mark{color:var(--blue-light)}
+
+/* ---------- botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:16px;color:#fff;border-radius:12px;padding:16px 30px;
+  background:linear-gradient(135deg,var(--green-1),var(--green-2));box-shadow:var(--shadow-accent);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px -8px rgba(28,202,91,.6)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.sm{font-size:14px;padding:10px 18px}
+
+/* ---------- cards ---------- */
+.card{border-radius:var(--radius);padding:28px;transition:transform .3s,border-color .3s,background .3s,box-shadow .3s}
+.dark .card{background:linear-gradient(135deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--border-dark)}
+.dark .card:hover{border-color:rgba(2,132,197,.45);background:rgba(255,255,255,.05)}
+.light .card{background:#fff;border:1px solid rgba(224,224,224,.5);box-shadow:var(--shadow-card)}
+.light .card:hover{transform:translateY(-4px);box-shadow:0 16px 48px -12px rgba(36,51,66,.2)}
+.ico{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(2,132,197,.1);border:1px solid rgba(2,132,197,.2);color:var(--blue)}
+.dark .ico{color:var(--blue-light)}
+.ico svg{width:20px;height:20px}
+.ico.solid{background:linear-gradient(135deg,var(--blue),var(--blue-light));color:#fff;border:none;box-shadow:0 8px 24px -8px rgba(2,132,197,.6)}
+.ico.green{background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.25);color:var(--green-1)}
+.dark .ico.green{color:var(--green-2)}
+.row{display:flex;gap:16px;align-items:flex-start}
+.row h3{font-size:16px;font-weight:600}
+.row p{font-size:15px;color:var(--muted);margin-top:4px}
+.dark .row p{color:rgba(255,255,255,.75)}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:rgba(2,132,197,.1);border:1px solid rgba(2,132,197,.3);color:var(--blue-light);font-size:15px}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--blue-light);box-shadow:0 0 10px var(--blue-light)}
+.pic{border-radius:24px;overflow:hidden;position:relative}
+.pic img{width:100%;height:100%;object-fit:cover}
+.dark .pic{border:1px solid var(--border-dark);box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.light .pic{box-shadow:0 30px 60px -24px rgba(36,51,66,.35)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+
+/* ---------- header ---------- */
+
+/* ---------- 1. hero ---------- */
+#inicio{padding:90px 0 150px;min-height:100vh;min-height:100svh;display:flex;align-items:center;text-align:center;background:linear-gradient(135deg,#141414 0%,#1c1c1c 50%,#232323 100%)}
+#inicio h1{font-size:clamp(42px,6.6vw,84px);font-weight:700;margin:28px auto 0;max-width:900px;letter-spacing:-.02em}
+#inicio .sub{font-family:'Poppins',sans-serif;font-size:clamp(20px,2.4vw,28px);font-weight:500;color:rgba(255,255,255,.9);margin-top:10px}
+#inicio .lead{max-width:680px;margin:22px auto 0;font-size:clamp(17px,1.6vw,20px)}
+#inicio .stats{display:flex;justify-content:center;gap:56px;margin-top:52px;flex-wrap:wrap}
+#inicio .stat{display:flex;flex-direction:column;align-items:center;gap:10px;min-width:150px}
+#inicio .stat .ico{width:56px;height:56px;border-radius:14px}
+#inicio .stat .ico svg{width:26px;height:26px}
+#inicio .stat b{font-family:'Poppins',sans-serif;font-size:26px;line-height:1}
+#inicio .stat span{font-size:14px;color:rgba(255,255,255,.7);line-height:1.35}
+#inicio .hero-logo{height:64px;width:auto;margin:0 auto 28px;opacity:.95}
+.float{position:absolute;z-index:1;border-radius:14px;padding:12px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  font-size:13px;text-align:left;color:var(--blue-light);animation:bob 6s ease-in-out infinite;box-shadow:0 20px 40px -20px rgba(0,0,0,.7)}
+.float small{display:block;font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:4px;font-weight:600}
+.float b{color:#fff;font-size:18px;font-family:'Poppins',sans-serif}
+.float .up{color:var(--green-2);font-weight:600}
+.pillf{position:absolute;z-index:1;padding:4px 12px;border-radius:999px;border:1px solid rgba(2,132,197,.35);background:rgba(2,132,197,.08);font-size:12px;color:rgba(255,255,255,.7);animation:bob 7s ease-in-out infinite}
+.pillf em{font-style:normal;color:var(--green-2)}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+#inicio .chart{position:absolute;left:0;right:0;bottom:0;width:100%;height:240px;z-index:0;pointer-events:none}
+
+/* ---------- 2. quem sou ---------- */
+#quem .pic{aspect-ratio:1/1;max-width:560px}
+#quem .pic::after{content:"";position:absolute;inset:auto 0 0 0;height:32%;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+#quem .name{position:absolute;left:28px;bottom:24px;right:20px;z-index:2;color:#fff}
+#quem .name b{font-family:'Poppins',sans-serif;font-size:24px;display:block;line-height:1.2}
+#quem .name span{font-size:14px;color:rgba(255,255,255,.8)}
+#quem .wrap-pic{position:relative}
+#quem .wrap-pic .float{background:rgba(255,255,255,.9);border-color:#fff;box-shadow:var(--shadow-card);color:var(--muted)}
+#quem .wrap-pic .float small{color:var(--blue)}
+#quem .wrap-pic .float b{color:var(--ink)}
+#quem .tag{font-size:17px;color:var(--muted);margin-top:8px}
+#quem .bar{width:100%;max-width:420px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--blue),var(--blue-light) 50%,transparent);margin:24px 0}
+#quem p.t{color:#404040;font-size:16.5px}
+#quem p.t+p.t{margin-top:16px}
+
+/* ---------- 3. subido ---------- */
+#subido .grid2{align-items:stretch;gap:24px}
+#subido .card{padding:32px;display:flex;flex-direction:column;gap:20px}
+#subido .top{display:flex;gap:22px;align-items:center}
+#subido .top img{width:112px;height:112px;border-radius:20px;object-fit:cover;border:1px solid var(--border-dark);flex:none}
+#subido .top .lg{width:auto;height:auto;max-width:200px;border:0;border-radius:0}
+#subido .logo-box{padding:22px 24px;border-radius:20px;background:#050811;border:1px solid var(--border-dark)}
+#subido h3{font-size:26px;font-weight:700}
+#subido h4{font-size:15px;font-weight:600;color:rgba(255,255,255,.9);margin-top:6px;font-family:'Inter',sans-serif;line-height:1.4}
+#subido p{color:rgba(255,255,255,.72);font-size:15.5px}
+#subido p+p{margin-top:12px}
+
+/* ---------- 4. resultados ---------- */
+#resultados .points{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+#resultados .points .card{padding:20px;flex-direction:column;gap:14px}
+#resultados .points p{color:#404040;font-size:15px;margin:0}
+.carousel{position:relative;overflow:hidden;margin:0;
+  -webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.track{display:flex;gap:24px;width:max-content;padding:4px 0 24px;animation:marquee var(--dur,60s) linear infinite}
+.carousel:hover .track{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(calc(-50% - 12px))}}
+.slide{flex:0 0 360px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.slide .eyebrow{font-size:11.5px}
+.slide h3{font-size:19px;font-weight:600;margin:6px 0 16px;min-height:2.3em;display:flex;align-items:center}
+.slide .shot{width:100%;height:340px;border-radius:18px;background:#fff;overflow:hidden;display:grid;place-items:center;box-shadow:var(--shadow-card);border:1px solid #e5e7eb}
+.slide .shot img{width:100%;height:100%;object-fit:contain}
+.slide p{font-size:14.5px;line-height:1.55;color:var(--muted);margin-top:16px;max-width:340px}
+
+/* ---------- 4b. clientes ---------- */
+#clientes .lmq{overflow:hidden;margin:0;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+#clientes .logos{display:flex;gap:20px;width:max-content;padding:6px 0;animation:marquee var(--dur,40s) linear infinite}
+#clientes .lmq:hover .logos{animation-play-state:paused}
+#clientes .logo{flex:0 0 210px}
+#clientes .logo{display:flex;flex-direction:column;align-items:center;gap:14px;padding:24px 12px;text-align:center}
+#clientes .logo .c{width:96px;height:96px;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 10px 24px -8px rgba(0,0,0,.6)}
+#clientes .logo img{width:100%;height:100%;object-fit:cover;transform:scale(1.16)}
+#clientes .logo span{font-size:13.5px;font-weight:500;color:rgba(255,255,255,.85);line-height:1.3}
+#clientes .quote{text-align:center;margin-top:48px;font-family:'Poppins',sans-serif;font-style:italic;font-weight:500;font-size:clamp(17px,1.8vw,22px);color:rgba(255,255,255,.9)}
+
+/* ---------- 5. poder ---------- */
+/* ilustração: busca → anúncio → contato → resultado */
+.viz{position:relative;max-width:540px;margin:0 auto;padding:186px 0 70px 34px}
+.viz .dash{position:relative;background:linear-gradient(160deg,#141414,#1f2326);border-radius:24px;padding:24px;color:#fff;box-shadow:0 40px 80px -30px rgba(2,40,70,.55);border:1px solid rgba(255,255,255,.08);overflow:hidden}
+.viz .dash::before{content:"";position:absolute;width:320px;height:320px;right:-120px;top:-140px;border-radius:50%;background:rgba(0,171,245,.18);filter:blur(60px)}
+.viz .dh{display:flex;justify-content:space-between;align-items:center;gap:10px;position:relative}
+.viz .dh b{font-family:'Poppins',sans-serif;font-size:15px;font-weight:600}
+.viz .live{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--green-2);background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.25);padding:4px 10px;border-radius:99px;white-space:nowrap}
+.viz .live i{width:7px;height:7px;border-radius:50%;background:var(--green-2);box-shadow:0 0 8px var(--green-2);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.viz .sub{font-size:12px;color:rgba(255,255,255,.55);margin-top:2px;position:relative}
+.viz .chart{display:block;width:100%;height:auto;margin:18px 0 16px;position:relative}
+.viz .chart .ln{stroke-dasharray:900;stroke-dashoffset:900}
+.viz.on .chart .ln,.on .viz .chart .ln{animation:draw 2.2s .3s cubic-bezier(.22,1,.36,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.viz .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;position:relative}
+.viz .kpi{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px}
+.viz .kpi small{display:block;font-size:11px;color:rgba(255,255,255,.55);font-weight:500}
+.viz .kpi b{font-family:'Poppins',sans-serif;font-size:19px;line-height:1.3}
+.viz .kpi.c1 b{color:#4fa3ff}.viz .kpi.c2 b{color:#ff6b5e}.viz .kpi.c3 b{color:#ffc61a}
+.viz .search{position:absolute;z-index:3;left:0;top:0;width:min(400px,86%);background:#fff;border-radius:18px;padding:14px;box-shadow:0 24px 50px -18px rgba(36,51,66,.35);border:1px solid #eef0f3;animation:bob 6s ease-in-out infinite}
+.viz .bar{display:flex;align-items:center;gap:10px;border:1px solid #e3e6ea;border-radius:99px;padding:9px 14px;font-size:14px;color:#404040}
+.viz .bar svg{width:16px;height:16px;color:var(--blue);flex:none}
+.viz .bar .cur{width:1.5px;height:16px;background:var(--blue);animation:pulse 1s steps(1) infinite}
+.viz .ad{margin-top:12px;padding:10px 12px;border-radius:12px;background:linear-gradient(135deg,rgba(2,132,197,.07),rgba(0,171,245,.03));border:1px solid rgba(2,132,197,.18)}
+.viz .ad .tag{font-size:11px;font-weight:700;color:#1a1a1a}
+.viz .ad .tag span{font-weight:500;color:var(--muted)}
+.viz .ad h5{font-family:'Inter',sans-serif;font-size:15px;font-weight:600;color:#1a0dab;margin-top:2px}
+.viz .ad p{font-size:12.5px;color:#555;margin-top:2px}
+.viz .ad .rk{display:inline-block;margin-top:6px;font-size:11px;font-weight:700;color:var(--blue)}
+.viz .msg{position:absolute;z-index:3;right:-14px;bottom:20px;display:flex;align-items:center;gap:12px;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 24px 50px -18px rgba(36,51,66,.4);border:1px solid #eef0f3;animation:bob 7s ease-in-out infinite;animation-delay:-2s}
+.viz .msg .wa{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--green-1),var(--green-2));color:#fff;flex:none}
+.viz .msg .wa svg{width:22px;height:22px}
+.viz .msg b{display:block;font-size:14px;color:#1a1a1a}
+.viz .msg span{font-size:12.5px;color:var(--muted)}
+.viz .flow{position:absolute;z-index:2;left:16px;top:214px;width:2px;height:70px;background:repeating-linear-gradient(180deg,var(--blue) 0 6px,transparent 6px 12px);opacity:.5}
+#poder .t{color:#404040;font-size:16.5px}
+#poder .t+.t{margin-top:16px}
+#poder .checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+#poder .checks .card{padding:16px 18px;display:flex;gap:12px;align-items:center;font-weight:500;font-size:15px}
+#poder .checks .ico{width:36px;height:36px;border-radius:10px}
+#poder .tip{margin-top:20px;display:flex;gap:16px;background:linear-gradient(135deg,#141414,#2e2e2e)!important;color:#fff;border:0!important}
+#poder .tip p{color:rgba(255,255,255,.78);font-size:15px}
+#poder .tip b{color:#fff;display:block;font-size:16px;margin-bottom:4px}
+
+/* ---------- 6. meta/google ---------- */
+#plataformas .grid2{gap:24px;align-items:stretch}
+#plataformas .card{padding:0;overflow:hidden;display:flex;flex-direction:column}
+#plataformas .card .bd{padding:28px}
+/* ilustrações das plataformas */
+#plataformas .art{position:relative;height:250px;overflow:hidden;display:block}
+#plataformas .art .mt{position:absolute;left:18px;bottom:16px;display:flex;align-items:center;gap:8px;padding:7px 12px 7px 9px;border-radius:12px;background:#fff;box-shadow:0 10px 24px -10px rgba(0,0,0,.45)}
+#plataformas .art .mt svg{width:34px;height:18px}
+#plataformas .art.goo .mt svg{width:22px;height:20px}
+#plataformas .art .mt b{font-family:'Poppins',sans-serif;font-size:14px;color:#1a1a1a}
+/* Meta */
+#plataformas .art.meta{background:radial-gradient(circle at 20% 15%,rgba(24,119,242,.55),transparent 55%),radial-gradient(circle at 85% 90%,rgba(214,36,159,.45),transparent 55%),linear-gradient(135deg,#0b1d3a,#1a1030)}
+#plataformas .art .post{position:absolute;left:50%;top:22px;transform:translateX(-50%) rotate(-3deg);width:210px;background:#fff;border-radius:14px;box-shadow:0 24px 40px -16px rgba(0,0,0,.6);overflow:hidden;color:#1a1a1a}
+#plataformas .art .ph{display:flex;align-items:center;gap:8px;padding:9px 10px}
+#plataformas .art .av{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#111;color:#e22;font:700 10px 'Poppins',sans-serif;flex:none}
+#plataformas .art .ph b{display:block;font-size:12px;line-height:1.2}
+#plataformas .art .ph small{font-size:10px;color:#65676b}
+#plataformas .art .pimg{height:96px;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#0284c5,#00abf5);color:#fff;font:700 15px/1.2 'Poppins',sans-serif}
+#plataformas .art .pimg em{font-style:normal;font-weight:500;font-size:11.5px;opacity:.9}
+#plataformas .art .pcta{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:8px 10px;background:#f0f2f5}
+#plataformas .art .pcta span{font-size:9.5px;color:#65676b;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+#plataformas .art .pcta b{font-size:10px;padding:5px 7px;flex:none;border-radius:6px;background:#e4e6eb;white-space:nowrap}
+#plataformas .art .lg{position:absolute;width:52px;height:52px;filter:drop-shadow(0 10px 18px rgba(0,0,0,.45));animation:bob 6s ease-in-out infinite}
+#plataformas .art .lg svg{width:100%;height:100%}
+#plataformas .art .fb{left:12%;top:26px}
+#plataformas .art .ig{right:12%;top:70px;animation-delay:-3s}
+#plataformas .art .chip-r{position:absolute;right:18px;bottom:18px;padding:6px 11px;border-radius:99px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:12px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+/* Google */
+#plataformas .art.goo{background:radial-gradient(circle at 80% 10%,rgba(66,133,244,.18),transparent 55%),linear-gradient(160deg,#f7f9fc,#e9eef6)}
+#plataformas .art .serp{position:absolute;left:50%;top:20px;transform:translateX(-50%);width:min(300px,82%);background:#fff;border-radius:14px;padding:12px;box-shadow:0 20px 40px -18px rgba(36,51,66,.4);color:#1a1a1a}
+#plataformas .art .sb{display:flex;align-items:center;gap:8px;border:1px solid #dfe1e5;border-radius:99px;padding:6px 10px}
+#plataformas .art .gl{font:700 13px 'Poppins',sans-serif;letter-spacing:-.3px}
+#plataformas .art .gl i{font-style:normal}
+#plataformas .art .q{font-size:11.5px;color:#444;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#plataformas .art .res{margin-top:10px}
+#plataformas .art .res.ad{padding:8px 10px;border-radius:10px;background:rgba(66,133,244,.07);border:1px solid rgba(66,133,244,.2)}
+#plataformas .art .res small{font-size:10px;color:#555}
+#plataformas .art .res h6{font:600 13px 'Inter',sans-serif;color:#1a0dab;margin-top:2px}
+#plataformas .art .res p{font-size:10.5px;color:#555;margin-top:1px}
+#plataformas .art .ln{display:block;height:7px;border-radius:4px;background:#eceff3;margin-top:6px}
+#plataformas .art .maps{position:absolute;right:16px;bottom:16px;display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:12px;background:#fff;box-shadow:0 12px 24px -12px rgba(36,51,66,.45);animation:bob 6s ease-in-out infinite}
+#plataformas .art .maps svg{width:22px;height:22px}
+#plataformas .art .maps b{display:block;font-size:12px;color:#1a1a1a}
+#plataformas .art .maps small{font-size:10.5px;color:#f5a623}
+#plataformas h3{font-size:24px;font-weight:700}
+#plataformas .bd p{color:rgba(255,255,255,.72);margin-top:12px;font-size:15.5px}
+#plataformas .bd p b{color:#fff}
+#plataformas .adv{margin-top:20px;padding:14px 16px;border-radius:12px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);font-size:15px;color:rgba(255,255,255,.85);display:flex;gap:10px}
+#plataformas .adv svg{width:20px;height:20px;color:var(--green-2);flex:none;margin-top:2px}
+#plataformas .adv b{color:#fff}
+
+/* ---------- 7. gmn ---------- */
+.gmap{position:relative;overflow:hidden;background:#eef1f4}
+#plataformas .gmn-card{margin-top:24px;padding:0;overflow:hidden;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+#plataformas .gmn-card .gmap{min-height:440px}
+#plataformas .gmn-card .bd{padding:32px}
+#plataformas .gmn-card h3{font-size:24px;font-weight:700;margin-top:8px}
+#plataformas .gmn-card .bd p{color:rgba(255,255,255,.72);margin-top:12px;font-size:15.5px}
+#plataformas .gchecks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+#plataformas .gchecks .adv{margin-top:0}
+.gmap .map{position:absolute;inset:0;width:100%;height:100%}
+.gmap .search{position:absolute;top:18px;left:18px;right:18px;display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:99px;background:#fff;box-shadow:0 8px 20px -8px rgba(36,51,66,.35);font-size:14px;color:#404040}
+.gmap .search svg{width:17px;height:17px;color:var(--blue);flex:none}
+.gmap .me{position:absolute;left:47%;top:41%;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center}
+.gmap .me svg{width:46px;height:54px;filter:drop-shadow(0 8px 10px rgba(234,67,53,.45));animation:bob 4s ease-in-out infinite}
+.gmap .me b{margin-top:2px;padding:3px 10px;border-radius:8px;background:#fff;color:#1a1a1a;font-size:12.5px;box-shadow:0 4px 10px -4px rgba(0,0,0,.3)}
+.gmap .pulse{position:absolute;bottom:22px;width:60px;height:18px;border-radius:50%;background:rgba(234,67,53,.3);animation:ring 2s ease-out infinite}
+@keyframes ring{0%{transform:scale(.4);opacity:.9}100%{transform:scale(1.8);opacity:0}}
+.gmap .rank{position:absolute;right:16px;top:86px;width:170px;padding:12px;border-radius:14px;background:#fff;box-shadow:0 12px 24px -12px rgba(36,51,66,.45);animation:bob 6s ease-in-out infinite;animation-delay:-2s}
+.gmap .rank small{display:block;font-size:10.5px;font-weight:600;color:var(--muted);margin-bottom:6px}
+.gmap .rank div{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#1a1a1a;padding:4px 0}
+.gmap .rank i{font-style:normal;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font-size:10.5px;background:var(--green-1);color:#fff;flex:none}
+.gmap .rank em{font-style:normal;color:#f5a623;margin-left:auto;font-size:11px}
+.gmap .rank .o i{background:#e5e7eb;color:#888}
+.gmap .rank .o span{height:7px;flex:1;border-radius:4px;background:#eceff3}
+.gmap .prof{position:absolute;left:16px;right:16px;bottom:16px;padding:16px;border-radius:18px;background:#fff;box-shadow:0 18px 36px -14px rgba(36,51,66,.5)}
+.gmap .pt{display:flex;justify-content:space-between;gap:10px}
+.gmap .pt b{font-family:'Poppins',sans-serif;font-size:17px;color:#1a1a1a}
+.gmap .pt small{display:block;font-size:12.5px;color:#555;margin-top:2px}
+.gmap .pt .st{color:#f5a623;font-weight:600}
+.gmap .pt .op{color:var(--green-1);font-weight:600}
+.gmap .ver{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-size:13px;font-weight:700;flex:none}
+.gmap .acts{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:14px}
+.gmap .acts span{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:11.5px;font-weight:500;color:#1a73e8}
+.gmap .acts i{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:1px solid #dadce0;color:#1a73e8}
+.gmap .acts i svg{width:17px;height:17px}
+.gmap .acts .wa{color:var(--green-1)}
+.gmap .acts .wa i{background:linear-gradient(135deg,var(--green-1),var(--green-2));border:0;color:#fff}
+
+/* ---------- 8. sozinhos ---------- */
+
+/* ---------- 8. estrutura / funil ---------- */
+#sozinhos .head{margin-bottom:40px}
+#sozinhos .head .lead{margin-top:16px}
+#sozinhos .vs{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:stretch;margin:0 auto}
+#sozinhos .vs .card{padding:26px}
+#sozinhos .vs h3{font-size:18px;font-weight:700;display:flex;align-items:center;gap:10px}
+#sozinhos .vs h3 i{font-style:normal;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:15px}
+#sozinhos .vs .bad h3 i{background:rgba(234,67,53,.1);color:#d93025}
+#sozinhos .vs .good h3 i{background:rgba(34,197,94,.12);color:var(--green-1)}
+#sozinhos .vs ul{list-style:none;margin-top:16px;display:grid;gap:10px}
+#sozinhos .vs li{display:flex;gap:10px;font-size:15px;color:#404040;line-height:1.45}
+#sozinhos .vs li b{flex:none;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-size:11px;margin-top:1px}
+#sozinhos .vs .bad li b{background:rgba(234,67,53,.1);color:#d93025}
+#sozinhos .vs .good li b{background:rgba(34,197,94,.14);color:var(--green-1)}
+#sozinhos .vs .bad{background:#fff7f6!important;border-color:rgba(234,67,53,.15)!important}
+#sozinhos .vs .good{border:1px solid rgba(34,197,94,.3)!important}
+#sozinhos .vs .mid{display:grid;place-items:center}
+#sozinhos .vs .mid span{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;box-shadow:0 10px 24px -8px rgba(2,132,197,.6)}
+#sozinhos .vs .mid svg{width:22px;height:22px}
+#sozinhos .vs .note{margin-top:16px;padding-top:14px;border-top:1px solid #f0dcd9;font-size:14px;color:#555}
+#sozinhos .vs .good .note{border-top-color:#e2efe6}
+#sozinhos .flows{margin-top:72px}
+#sozinhos .flows>h3{text-align:center;font-size:clamp(22px,2.6vw,30px);font-weight:700}
+#sozinhos .flows>p{text-align:center;color:var(--muted);max-width:720px;margin:12px auto 0;font-size:16.5px}
+#sozinhos .flow{margin-top:36px;padding:28px;border-radius:24px;background:linear-gradient(160deg,#141414,#1f2326);color:#fff;position:relative;overflow:hidden;box-shadow:0 30px 60px -28px rgba(2,40,70,.5)}
+#sozinhos .flow::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(80px);background:rgba(0,171,245,.16);right:-140px;top:-200px}
+#sozinhos .flow.g::before{background:rgba(52,168,83,.14)}
+#sozinhos .fh{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+#sozinhos .fh .tag{display:inline-flex;align-items:center;gap:10px;font-family:'Poppins',sans-serif;font-weight:600;font-size:17px}
+#sozinhos .fh .tag em{font-style:normal;font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue-light);padding:5px 10px;white-space:nowrap;border-radius:99px;background:rgba(0,171,245,.12);border:1px solid rgba(0,171,245,.3)}
+#sozinhos .flow.g .fh .tag em{color:#5fd38a;background:rgba(52,168,83,.12);border-color:rgba(52,168,83,.3)}
+#sozinhos .fh small{color:rgba(255,255,255,.6);font-size:13.5px}
+#sozinhos .steps{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+#sozinhos .steps::before{content:"";position:absolute;left:8%;right:8%;top:31px;height:2px;background:repeating-linear-gradient(90deg,rgba(0,171,245,.6) 0 8px,transparent 8px 16px);background-size:32px 2px;animation:flowdash 1.2s linear infinite}
+#sozinhos .flow.g .steps::before{background-image:repeating-linear-gradient(90deg,rgba(52,168,83,.7) 0 8px,transparent 8px 16px)}
+@keyframes flowdash{to{background-position:32px 0}}
+@keyframes flowdashv{to{background-position:0 32px}}
+#sozinhos .step{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center}
+#sozinhos .step .n{position:relative;width:62px;height:62px;border-radius:18px;display:grid;place-items:center;background:#1c2730;border:1px solid rgba(255,255,255,.12);box-shadow:0 10px 24px -10px rgba(0,0,0,.7)}
+#sozinhos .step .n svg{width:26px;height:26px;color:var(--blue-light)}
+#sozinhos .flow.g .step .n svg{color:#5fd38a}
+#sozinhos .step .n b{position:absolute;top:-8px;right:-8px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:11px;background:var(--blue);color:#fff}
+#sozinhos .flow.g .step .n b{background:var(--green-1)}
+#sozinhos .step h4{font-family:'Poppins',sans-serif;font-size:15.5px;font-weight:600;margin-top:14px;line-height:1.25}
+#sozinhos .step p{font-size:13.5px;color:rgba(255,255,255,.68);margin-top:6px;line-height:1.5}
+#sozinhos .step.res .n{background:linear-gradient(135deg,var(--green-1),var(--green-2));border:0;box-shadow:0 10px 30px -8px rgba(34,197,94,.6)}
+#sozinhos .step.res .n svg{color:#fff!important}
+#sozinhos .step.res h4{color:#5fd38a}
+#sozinhos .step .n .ic{width:30px;height:30px}
+#sozinhos .pillars{margin-top:72px}
+#sozinhos .pillars>h3{text-align:center;font-size:clamp(20px,2.2vw,26px);font-weight:700;max-width:820px;margin:0 auto 26px}
+#sozinhos .five{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+#sozinhos .five .card{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:22px 14px;font-size:15px;font-weight:500;color:var(--ink)}
+#sozinhos .five .card small{font-size:13px;font-weight:400;color:var(--muted);line-height:1.45}
+#sozinhos .close{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:24px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(2,40,70,.45)}
+#sozinhos .close>div{padding:32px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+#sozinhos .close .l{background:#fff;border:1px solid #eceef1;border-right:0;border-radius:24px 0 0 24px}
+#sozinhos .close .r{background:linear-gradient(135deg,#0284c5,#00abf5);color:#fff}
+#sozinhos .close .l b{color:#d93025}
+#sozinhos .close p{font-size:16.5px;line-height:1.6}
+#sozinhos .close .l p{color:#404040}
+#sozinhos .close .r p{font-weight:500}
+
+/* ---------- 9. planos ---------- */
+
+/* ---------- 9. planos ---------- */
+#planos .head .lead{margin-top:14px;font-size:16px}
+#planos .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch;max-width:1200px;margin:0 auto}
+#planos .plan{position:relative;display:flex;flex-direction:column;padding:34px 28px 28px;text-align:left}
+#planos .badges{position:absolute;top:-14px;left:20px;right:20px;display:flex;justify-content:space-between;gap:8px;pointer-events:none}
+#planos .badge-min,#planos .badge-best{padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap;color:#fff}
+#planos .badge-min{background:linear-gradient(135deg,var(--blue),var(--blue-light))}
+#planos .badge-best{background:linear-gradient(135deg,var(--blue),var(--blue-light));box-shadow:0 8px 24px -8px rgba(2,132,197,.7)}
+#planos .plan h3{font-size:21px;font-weight:700;line-height:1.25;display:flex;align-items:center;gap:12px}
+#planos .plogo{flex:none;display:inline-flex;align-items:center;justify-content:center;filter:drop-shadow(0 4px 10px rgba(0,0,0,.4))}
+#planos .plogo .lg-meta{width:52px;height:30px;margin:0 -8px}
+#planos .plogo .lg-gads{width:34px;height:31px}
+#planos .plogo.duo{gap:4px}
+#planos .plogo.duo .lg-gads{margin-left:-2px}
+#planos .plan .tag-inc{display:block;margin-top:20px;font-size:14px;font-weight:600;color:#fff}
+#planos .plan ul{list-style:none;margin-top:12px;display:grid;gap:10px;align-content:start}
+#planos .plan li{display:flex;gap:10px;font-size:15px;line-height:1.45;color:rgba(255,255,255,.85)}
+#planos .plan li svg{width:19px;height:19px;flex:none;color:var(--green-2);margin-top:2px}
+#planos .plan .foot{margin-top:auto;padding-top:24px}
+#planos .plan .verba{padding:14px 16px;border-radius:14px;background:rgba(0,171,245,.08);border:1px solid rgba(0,171,245,.28)}
+#planos .plan .verba small{display:block;font-size:12.5px;font-weight:600;color:var(--blue-light);margin-bottom:6px}
+#planos .plan .verba .it{font-size:14px;color:rgba(255,255,255,.75);line-height:1.45}
+#planos .plan .verba .it+.it{margin-top:8px}
+#planos .plan .verba .it b{display:block;font-size:15px;color:#fff}
+#planos .plan .verba .it em{font-style:normal;font-size:13px;color:rgba(255,255,255,.55)}
+#planos .plan .valor{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
+#planos .plan .valor small{display:block;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.6)}
+#planos .plan .price{font-family:'Poppins',sans-serif;font-weight:700;font-size:42px;line-height:1.15;letter-spacing:-.02em;margin-top:4px}
+#planos .plan .price span{font-size:17px;font-weight:500;color:rgba(255,255,255,.6);letter-spacing:0;margin-left:2px}
+#planos .plan .pay{font-size:14px;color:rgba(255,255,255,.8);margin-top:6px}
+#planos .plan .pay b{color:var(--green-2);white-space:nowrap}
+#planos .plan .btn{margin-top:22px;width:100%}
+#planos .plan.best{background:linear-gradient(160deg,#0b2a3f,#0a1822)!important;color:#fff;border:1px solid rgba(0,171,245,.4)!important;box-shadow:0 30px 60px -24px rgba(2,132,197,.45)!important}
+#planos .plan.best .badge-min{background:linear-gradient(135deg,var(--green-1),var(--green-2))}
+#planos .plan.best .tag-inc{color:#fff}
+#planos .plan.best li{color:rgba(255,255,255,.85)}
+#planos .plan.best li svg{color:var(--green-2)}
+#planos .plan.best .verba{background:rgba(0,171,245,.08);border-color:rgba(0,171,245,.28)}
+#planos .plan.best .verba small{color:var(--blue-light)}
+#planos .plan.best .verba .it{color:rgba(255,255,255,.75)}
+#planos .plan.best .verba .it b{color:#fff}
+#planos .plan.best .verba .it em{color:rgba(255,255,255,.55)}
+#planos .plan.best .valor{border-top-color:rgba(255,255,255,.1)}
+#planos .plan.best .valor small,#planos .plan.best .price span{color:rgba(255,255,255,.6)}
+#planos .plan.best .pay{color:rgba(255,255,255,.8)}
+#planos .plan.best .pay b{color:var(--green-2)}
+#planos .cond{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:40px auto 0}
+#planos .cond .card{padding:20px;display:flex;flex-direction:column;gap:12px}
+#planos .cond h4{font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue-light)}
+#planos .cond p{font-size:14.5px;color:rgba(255,255,255,.75);line-height:1.5}
+#planos .gestao{max-width:1200px;margin:64px auto 0}
+#planos .gestao>h3{text-align:center;font-size:clamp(20px,2.2vw,26px);font-weight:700;margin-bottom:24px}
+#planos .gestao .card{padding:20px}
+#planos .gestao .card p{color:rgba(255,255,255,.8);margin:0}
+
+/* ---------- 10. contato ---------- */
+#contato .big{font-size:clamp(36px,5.6vw,68px);font-weight:800;text-align:center;letter-spacing:-.02em;margin-top:10px}
+#contato .box{margin:52px auto 0;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;padding:44px;align-items:center}
+#contato .box h3{font-size:clamp(24px,2.4vw,30px);font-weight:700}
+#contato .box .s{color:rgba(255,255,255,.75);margin-top:12px}
+#contato .box .btn{margin-top:26px}
+#contato .info{display:grid;gap:14px}
+#contato .info a{display:flex;gap:14px;align-items:center;padding:16px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);transition:border-color .2s}
+#contato .info a:hover{border-color:rgba(34,197,94,.4)}
+#contato .info .ico{width:46px;height:46px}
+#contato .info small{display:block;font-size:13px;color:rgba(255,255,255,.6)}
+#contato .info span{font-size:16px;word-break:break-word}
+#contato .info .wa span{text-decoration:underline;text-underline-offset:3px}
+#contato .jh{width:120px;height:120px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 4px rgba(0,112,125,.6),0 20px 40px -10px rgba(0,0,0,.7);margin-bottom:24px}
+#contato .jh img{width:100%;height:100%;object-fit:cover}
+#contato blockquote{margin:36px auto 0;padding:36px 36px 32px;font-style:italic;color:rgba(255,255,255,.85);font-size:16.5px;line-height:1.7;position:relative}
+#contato blockquote p+p{margin-top:14px}
+#contato blockquote .qm{position:absolute;top:-18px;left:30px;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--blue-light));font-family:'Poppins',sans-serif;font-style:normal;font-size:44px;line-height:1;padding-top:18px;color:#fff}
+
+/* ---------- footer ---------- */
+footer{background:var(--bg-dark);color:rgba(255,255,255,.6);border-top:1px solid var(--border-dark);padding:40px 0;font-size:14px}
+footer .container{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;max-width:1360px}
+footer img{height:46px;width:auto}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.rv.on{opacity:1;transform:none}
+
+/* ---------- responsivo ---------- */
+@media (max-width:1100px){
+  .hide-md{display:none}
+}
+@media (max-width:1300px){
+}
+@media (max-width:960px){
+  #sozinhos .vs{grid-template-columns:1fr}
+  #sozinhos .vs .mid span{transform:rotate(90deg)}
+  #sozinhos .steps{grid-template-columns:1fr;gap:0}
+  #sozinhos .steps::before{left:30px;right:auto;top:30px;bottom:30px;width:2px;height:auto;background:repeating-linear-gradient(180deg,rgba(0,171,245,.6) 0 8px,transparent 8px 16px);background-size:2px 32px;animation:flowdashv 1.2s linear infinite}
+  #sozinhos .flow.g .steps::before{background-image:repeating-linear-gradient(180deg,rgba(52,168,83,.7) 0 8px,transparent 8px 16px)}
+  #sozinhos .step{flex-direction:row;align-items:flex-start;text-align:left;gap:16px;padding:10px 0}
+  #sozinhos .step .n{flex:none}
+  #sozinhos .step h4{margin-top:4px}
+  #sozinhos .five{grid-template-columns:repeat(2,1fr)}
+  #sozinhos .five .card:last-child{grid-column:1/-1}
+  #sozinhos .close{grid-template-columns:1fr}
+  #sozinhos .close .l{border-right:1px solid #eceef1;border-bottom:0;border-radius:24px 24px 0 0}
+  #plataformas .gmn-card{grid-template-columns:1fr}
+  #planos .plans{grid-template-columns:1fr;max-width:560px;gap:36px}
+  #planos .cond{grid-template-columns:1fr 1fr;max-width:560px}
+  #planos .gestao{max-width:560px}
+  #resultados .points{grid-template-columns:1fr 1fr}
+  section{padding:80px 0}
+  .grid2{grid-template-columns:1fr;gap:40px}
+  .float,.pillf{display:none}
+  #quem .wrap-pic{max-width:520px;margin:0 auto;width:100%}
+  .grid3{grid-template-columns:1fr 1fr}
+  #contato .box{grid-template-columns:1fr;padding:32px 24px}
+}
+@media (max-width:600px){
+  #sozinhos .flow{padding:22px 18px}
+  #sozinhos .fh .tag{flex-direction:column;align-items:flex-start;gap:8px}
+  #sozinhos .close>div{padding:24px}
+  #plataformas .gmn-card .gmap{min-height:0;height:430px}
+  .gmap .rank{width:158px;top:76px;right:12px;padding:10px}
+  .gmap .rank div{font-size:11px;white-space:nowrap;gap:5px}
+  .gmap .rank em{font-size:10px}
+  .gmap .me{left:30%;top:46%}
+  .gmap .prof{left:12px;right:12px;bottom:12px;padding:14px}
+  #plataformas .gmn-card .bd{padding:22px}
+  #plataformas .gchecks{grid-template-columns:1fr}
+  .gmap{aspect-ratio:auto;height:440px;border-radius:22px}
+  .gmap .rank{width:158px;top:76px;right:12px;padding:10px}
+  .gmap .rank div{font-size:11px;white-space:nowrap;gap:5px}
+  .gmap .rank em{font-size:10px}
+  .gmap .me{left:30%;top:46%}
+  .gmap .prof{left:12px;right:12px;bottom:12px;padding:14px}
+  #planos .plan{padding:32px 20px 22px}
+  #planos .plan .price{font-size:36px}
+  #planos .cond{grid-template-columns:1fr}
+  body{font-size:15.5px}
+  .container{padding:0 18px}
+  section{padding:68px 0}
+  .head{margin-bottom:40px}
+  .divider{margin-bottom:40px}
+  #inicio{padding:56px 0 150px}
+  #inicio .stats{gap:28px 12px}
+  #inicio .stat{min-width:0;width:calc(50% - 6px)}
+  #inicio .stat:last-child{width:100%}
+  #inicio .chart{height:150px}
+  .btn{padding:16px 22px}
+  .grid3{grid-template-columns:1fr}
+  #subido .top{flex-direction:column;align-items:flex-start}
+  #subido .card{padding:24px}
+  #resultados .points{grid-template-columns:1fr;gap:12px;margin-top:44px}
+  #resultados .points .card{flex-direction:row;padding:16px 18px}
+  .slide{flex-basis:280px}
+  .slide .shot{height:300px}
+  #clientes .logos{gap:14px}
+  #clientes .logo{flex-basis:160px}
+  #clientes .logo .c{width:84px;height:84px}
+  #poder .checks{grid-template-columns:1fr}
+  .viz{padding:196px 0 64px 0}
+  .viz .search{width:92%}
+  .viz .flow{display:none}
+  .viz .dash{padding:18px;border-radius:20px}
+  .viz .kpi{padding:10px}
+  .viz .kpi b{font-size:16px}
+  .viz .msg{right:0;bottom:6px;padding:10px 14px}
+  #plataformas .art{height:270px}
+  #plataformas .art .post{top:14px;width:190px}
+  #plataformas .art .chip-r{display:none}
+  #plataformas .art .mt{bottom:12px;left:12px}
+  #plataformas .art .serp{top:14px;width:88%}
+  #plataformas .art .maps{right:12px;bottom:12px}
+  #plataformas .art .fb{left:5%}
+  #plataformas .art .ig{right:5%}
+  #plataformas .art .lg{width:44px;height:44px}
+  #plataformas .card .bd{padding:22px}
+  #contato blockquote{padding:32px 22px 24px}
+  #contato .info span{font-size:14.5px;word-break:normal;overflow-wrap:anywhere}
+  footer .container{flex-direction:column;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.float,.pillf{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+
+<!-- ============ 1. CAPA ============ -->
+<section id="inicio" class="dark">
+  <div class="glow b" style="width:620px;height:620px;left:50%;top:10%;transform:translateX(-50%)"></div>
+  <div class="glow g" style="width:520px;height:340px;right:-120px;bottom:-60px"></div>
+
+  <div class="float hide-md" style="left:7%;top:36%;min-width:190px;animation-delay:-3s"><small>CPC méd.</small><b>R$ 1,50</b></div>
+  <div class="float hide-md" style="left:7%;top:52%;min-width:190px;animation-delay:-1s"><small>Conversas iniciadas</small><b>202</b> <span class="up">↑</span></div>
+  <div class="float hide-md" style="right:7%;top:36%;min-width:190px;animation-delay:-4s"><small>Conversões</small><b>941,00</b> <span class="up">↑</span></div>
+  <div class="float hide-md" style="right:7%;top:52%;min-width:190px;animation-delay:-2s"><small>Custo por conversa</small><b>R$ 6,96</b></div>
+
+  <svg class="chart" viewBox="0 0 1440 240" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="ga" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22c35d" stop-opacity=".22"/><stop offset="1" stop-color="#22c35d" stop-opacity="0"/></linearGradient></defs>
+    <path d="M0 220 L180 208 L360 214 L540 190 L720 196 L900 160 L1080 150 L1260 100 L1440 50 L1440 240 L0 240Z" fill="url(#ga)"/>
+    <path d="M0 220 L180 208 L360 214 L540 190 L720 196 L900 160 L1080 150 L1260 100 L1440 50" fill="none" stroke="#22c35d" stroke-width="3" style="filter:drop-shadow(0 0 8px rgba(34,195,93,.8))"/>
+    <g fill="#22c35d"><circle cx="540" cy="190" r="5"/><circle cx="1080" cy="150" r="5"/><circle cx="1260" cy="100" r="5"/></g>
+  </svg>
+
+  <div class="container">
+    <img class="hero-logo rv" src="img/jh-company.png" alt="JH Company">
+    <span class="chip rv"><i></i>Proposta Comercial</span>
+    <h1 class="rv">Marketing <span class="hl">Digital</span></h1>
+    <p class="lead rv">Gestão de Tráfego Pago<br>Para <b style="color:#fff">Negócios Locais</b> e <b style="color:#fff">Prestadores de Serviços</b></p>
+    <div class="stats rv">
+      <div class="stat"><div class="ico"><svg data-i="meta"></svg></div><b>Meta Ads</b><span>Facebook e Instagram</span></div>
+      <div class="stat"><div class="ico"><svg data-i="search"></svg></div><b>Google Ads</b><span>Buscas e sites parceiros</span></div>
+      <div class="stat"><div class="ico"><svg data-i="pin"></svg></div><b>GMN</b><span>Google Meu Negócio</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. QUEM SOU ============ -->
+<section id="quem" class="light">
+  <div class="glow b" style="width:500px;height:500px;left:-160px;top:30%"></div>
+  <div class="container">
+    <div class="divider"></div>
+    <div class="grid2">
+      <div class="wrap-pic rv">
+        <div class="pic">
+          <img src="img/jeude-quem-sou.webp" alt="Jeúde Henrique, gestor de tráfego pago, com painéis de resultados de Meta Ads e Google Ads">
+          <div class="name"><b>Jeúde Henrique</b><span>Gestor de tráfego pago e Marketing p/ Negócios Locais</span></div>
+        </div>
+      </div>
+      <div class="rv">
+        <span class="eyebrow">Quem Sou?</span>
+        <h2 class="h2">Me chamo <span class="hl">Jeúde Henrique</span></h2>
+        <p class="tag">Sou gestor de tráfego pago, especializado em negócios locais.</p>
+        <div class="bar"></div>
+        <p class="t">Minha missão é atrair clientes qualificados para sua empresa por meio de campanhas segmentadas, utilizando <span class="mark">Meta Ads</span> (Facebook e Instagram), <span class="mark">Google Ads</span> e estratégias de posicionamento no <span class="mark">Google Meu Negócio.</span></p>
+        <p class="t">Atuo no Marketing digital desde 2018. Iniciei com a produção de infoprodutos (cursos online e mentorias), participando de todo o processo, desde a criação até a venda final.</p>
+        <p class="t">Desde 2024, meu foco está voltado exclusivamente para o <span class="mark">Tráfego pago,</span> atendendo Negócios locais. Meu objetivo é entregar resultados consistentes e escaláveis para empresas que desejam crescer através da internet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. MÉTODO / COMUNIDADE SUBIDO ============ -->
+<section id="subido" class="dark">
+  <div class="glow b" style="width:560px;height:560px;right:-200px;top:-100px"></div>
+  <div class="container">
+    <div class="grid2">
+      <article class="card rv">
+        <span class="eyebrow">Formação</span>
+        <div class="top">
+          <img src="img/pedro.jpg" alt="Pedro Sobral">
+          <div>
+            <h3>Método <span class="hl">Subido</span></h3>
+            <h4>Pedro Sobral | Gestor de Tráfego e Especialista em Anúncios Online</h4>
+          </div>
+        </div>
+        <div>
+          <p>Tenho o orgulho de ser aluno de Pedro Sobral, um dos maiores especialistas em tráfego pago e anúncios online do Brasil.</p>
+          <p>Reconhecido por formar milhares de gestores e por contribuir diretamente para o crescimento do mercado de marketing digital no país, Pedro é referência quando o assunto é estratégia, performance e geração de resultados através da mídia paga.</p>
+        </div>
+      </article>
+      <article class="card rv">
+        <span class="eyebrow">Comunidade</span>
+        <div class="top">
+          <div class="logo-box"><img class="lg" src="img/subido.png" alt="Subido – Comunidade Subido de Tráfego"></div>
+        </div>
+        <div>
+          <h3>Comunidade <span class="hl">Subido</span></h3>
+          <h4>A comunidade Subido é um grupo seleto de gestores</h4>
+        </div>
+        <div>
+          <p>Faço parte da Comunidade Subido, uma das maiores comunidades de tráfego pago do Brasil. Nela, gestores compartilham estratégias, experiências e conhecimentos com um único objetivo: <span class="mark">gerar mais resultados para seus clientes.</span></p>
+          <p>Esse ambiente de troca constante permite acesso a métodos validados na prática, networking qualificado e aprendizado contínuo com profissionais que atuam diariamente no mercado.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. RESULTADOS REAIS ============ -->
+<section id="resultados" class="light" style="background:#fff">
+  <div class="glow b" style="width:600px;height:600px;left:-220px;top:20%"></div>
+  <div class="glow b" style="width:500px;height:500px;right:-200px;bottom:-100px"></div>
+  <div class="container">
+    <div class="divider"></div>
+    <div class="head rv">
+      <span class="eyebrow"><svg data-i="bar" style="width:14px;height:14px"></svg>Google/Meta</span>
+      <h2 class="h2">Resultados <span class="hl">reais</span></h2>
+    </div>
+    <div class="carousel rv" role="region" aria-roledescription="carousel" aria-label="Resultados de clientes">
+      <div class="track">
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="1 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Refrigeração</h3>
+          <div class="shot"><img src="img/resultados/refrigeracao.webp" alt="Resultado de tráfego pago – Refrigeração" loading="lazy"></div>
+          <p>Conserto de Máquina de Lavar, Geladeiras e Freezers — conversas geradas a partir de R$ 2,76 cada.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="2 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Higienização de Sofás</h3>
+          <div class="shot"><img src="img/resultados/higienizacao-sofas.webp" alt="Resultado de tráfego pago – Higienização de Sofás" loading="lazy"></div>
+          <p>Campanhas otimizadas com conversas geradas a partir de R$ 1,93 cada — alto volume de leads qualificados.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="3 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Climatização e Refrigeração · RJ</h3>
+          <div class="shot"><img src="img/resultados/google-ads-climatizacao-rj.webp" alt="Resultado de tráfego pago – Climatização e Refrigeração · RJ" loading="lazy"></div>
+          <p>Google Ads de jul/2024 a jun/2025: 2,01 mil cliques, 480 conversões e CTR de 4,79%, com R$ 3,78 mil investidos — menos de R$ 8 por conversão.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="4 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Climatização</h3>
+          <div class="shot"><img src="img/resultados/climatizacao.webp" alt="Resultado de tráfego pago – Climatização" loading="lazy"></div>
+          <p>Instalação e manutenção de ar-condicionado — 310 conversas geradas com investimento total de R$ 1.467,11.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="5 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Higienização de Sofás · SP</h3>
+          <div class="shot"><img src="img/resultados/conta-higienizacao-sp.webp" alt="Resultado de tráfego pago – Higienização de Sofás · SP" loading="lazy"></div>
+          <p>Conta de anúncios gerenciada pela JH Company: mais de R$ 104 mil investidos em tráfego pago para uma empresa de higienização de sofás em SP.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="6 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Clínica de Estética · RJ</h3>
+          <div class="shot"><img src="img/resultados/estetica-rj.webp" alt="Resultado de tráfego pago – Clínica de Estética · RJ" loading="lazy"></div>
+          <p>477 leads no WhatsApp com R$ 3.318,34 investidos — média de R$ 6,96 por lead.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="7 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Google Ads</h3>
+          <div class="shot"><img src="img/resultados/google-ads-2022-2025.webp" alt="Resultado de tráfego pago – Google Ads" loading="lazy"></div>
+          <p>De fev/2022 a jun/2025: 6,46 mil cliques com CPC médio de R$ 1,50 e 941 conversões, com R$ 9,67 mil investidos.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="8 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Climatização · Fortaleza</h3>
+          <div class="shot"><img src="img/resultados/climatizacao-fortaleza.webp" alt="Resultado de tráfego pago – Climatização · Fortaleza" loading="lazy"></div>
+          <p>Anúncios convertendo em conversas no WhatsApp com custo por lead abaixo da média: entre R$ 3,30 e R$ 5,53 por conversa.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="9 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Painéis Ripados</h3>
+          <div class="shot"><img src="img/resultados/paineis-ripados.webp" alt="Resultado de tráfego pago – Painéis Ripados" loading="lazy"></div>
+          <p>99 conversas por mensagem geradas com investimento de R$ 395,33 — custo médio de R$ 3,99 por conversa.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="10 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Google Ads</h3>
+          <div class="shot"><img src="img/resultados/google-ads-custo-conversao.webp" alt="Resultado de tráfego pago – Google Ads" loading="lazy"></div>
+          <p>227 conversões a R$ 8,75 cada, com 2,47 mil cliques e R$ 1,99 mil investidos.</p>
+        </article>
+        <article class="slide" role="group" aria-roledescription="slide" aria-label="11 de 11">
+          <span class="eyebrow">Nicho</span>
+          <h3>Meta Ads</h3>
+          <div class="shot"><img src="img/resultados/meta-ads-conversas.webp" alt="Resultado de tráfego pago – Meta Ads" loading="lazy"></div>
+          <p>479 conversas no WhatsApp com R$ 1.763,99 investidos — média de R$ 3,68 por conversa, com custos a partir de R$ 2,35.</p>
+        </article>
+      </div>
+    </div>
+    <div class="points">
+      <div class="card row rv"><div class="ico"><svg data-i="trend"></svg></div><p>Esses são resultados reais que geraram vendas para empresas locais.</p></div>
+      <div class="card row rv"><div class="ico"><svg data-i="target"></svg></div><p>A mesma estratégia validada será aplicada no seu negócio, com ajustes conforme sua realidade.</p></div>
+      <div class="card row rv"><div class="ico"><svg data-i="zap"></svg></div><p>Meu foco não é apenas subir campanhas, mas gerar resultados — como já fiz com outros clientes.</p></div>
+      <div class="card row rv"><div class="ico"><svg data-i="shield"></svg></div><p>Cada empresa tem suas particularidades, mas com a estratégia certa, os resultados vêm.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4b. CLIENTES ============ -->
+<section id="clientes" class="dark">
+  <div class="glow b" style="width:620px;height:620px;left:50%;top:-180px;transform:translateX(-50%)"></div>
+  <div class="container">
+    <div class="head rv">
+      <span class="eyebrow">Cases de sucesso</span>
+      <h2 class="h2">Empresas que <span class="hl">confiaram</span> na nossa expertise</h2>
+    </div>
+    <div class="lmq rv">
+      <div class="logos">
+      <div class="card logo"><div class="c"><img src="img/cliente-wall.png" alt="Wall Refrigeração"></div><span>WALL REFRIGERAÇÃO</span></div>
+      <div class="card logo"><div class="c"><img src="img/cliente-climatech.png" alt="Climatech"></div><span>CLIMATECH</span></div>
+      <div class="card logo"><div class="c"><img src="img/cliente-drlimpaja.png" alt="Dr Limpa Já"></div><span>DR LIMPA JÁ</span></div>
+      <div class="card logo"><div class="c"><img src="img/cliente-vltech.png" alt="VL Tech"></div><span>VL TECH</span></div>
+      <div class="card logo"><div class="c"><img src="img/cliente-jfconstrutora.png" alt="JF Construtora"></div><span>JF CONSTRUTORA</span></div>
+      <div class="card logo"><div class="c"><img src="img/cliente-eletrogelo.png" alt="Eletrogelo"></div><span>ELETROGELO</span></div>
+      <div class="card logo"><div class="c"><img src="img/cliente-clinicagb.png" alt="Clínica G &amp; B"></div><span>CLÍNICA G &amp; B</span></div>
+      <div class="card logo"><div class="c"><img src="img/cliente-bwripados.png" alt="BW Ripados"></div><span>BW RIPADOS</span></div>
+      <div class="card logo"><div class="c"><img src="img/cliente-jm2.png" alt="JM2 Piso Laminado"></div><span>JM2 - PISO LAMINADO</span></div>
+      <div class="card logo"><div class="c"><img src="img/cliente-limpezaajato.png" alt="Limpeza a Jato"></div><span>LIMPEZA A JATO</span></div>
+      </div>
+    </div>
+    <p class="quote rv">“Estratégias que Aumentam o Sucesso de Negócios Locais e Serviços Especializados”</p>
+  </div>
+</section>
+
+<!-- ============ 5. O PODER DO TRÁFEGO PAGO ============ -->
+<section id="poder" class="light" style="background:#fff">
+  <div class="glow b" style="width:500px;height:500px;right:-180px;top:10%"></div>
+  <div class="container">
+    <div class="grid2">
+      <div class="viz rv" role="img" aria-label="Ilustração: o cliente pesquisa no Google, o anúncio da sua empresa aparece primeiro, ele chama no WhatsApp e a campanha mostra os resultados crescendo">
+        <div class="search">
+          <div class="bar"><svg data-i="search"></svg>serviço perto de mim<span class="cur"></span></div>
+          <div class="ad">
+            <div class="tag">Patrocinado · <span>suaempresa.com.br</span></div>
+            <h5>Sua Empresa — Orçamento Rápido</h5>
+            <p>Atendimento na sua região. Fale agora pelo WhatsApp.</p>
+            <span class="rk">↑ 1º resultado da pesquisa</span>
+          </div>
+        </div>
+        <div class="flow"></div>
+        <div class="dash">
+          <div class="dh"><div><b>Campanha ativa</b><div class="sub">Google Ads · Meta Ads</div></div><span class="live"><i></i>Otimizando</span></div>
+          <svg class="chart" viewBox="0 0 440 150" aria-hidden="true">
+            <defs><linearGradient id="vg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00abf5" stop-opacity=".35"/><stop offset="1" stop-color="#00abf5" stop-opacity="0"/></linearGradient></defs>
+            <g stroke="rgba(255,255,255,.06)"><path d="M0 30H440M0 70H440M0 110H440"/></g>
+            <g fill="rgba(0,171,245,.22)"><rect x="18" y="118" width="26" height="32" rx="5"/><rect x="72" y="108" width="26" height="42" rx="5"/><rect x="126" y="112" width="26" height="38" rx="5"/><rect x="180" y="92" width="26" height="58" rx="5"/><rect x="234" y="80" width="26" height="70" rx="5"/><rect x="288" y="62" width="26" height="88" rx="5"/><rect x="342" y="40" width="26" height="110" rx="5"/><rect x="396" y="22" width="26" height="128" rx="5"/></g>
+            <path d="M31 112 L85 100 L139 104 L193 82 L247 70 L301 50 L355 30 L409 10 L409 150 L31 150Z" fill="url(#vg)"/>
+            <path class="ln" d="M31 112 L85 100 L139 104 L193 82 L247 70 L301 50 L355 30 L409 10" fill="none" stroke="#00abf5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="409" cy="10" r="5" fill="#00abf5"/><circle cx="409" cy="10" r="10" fill="none" stroke="#00abf5" stroke-opacity=".35" stroke-width="2"/>
+          </svg>
+          <div class="kpis">
+            <div class="kpi c1"><small>Cliques</small><b>6,46 mil</b></div>
+            <div class="kpi c2"><small>CPC méd.</small><b>R$ 1,50</b></div>
+            <div class="kpi c3"><small>Conversões</small><b>941</b></div>
+          </div>
+        </div>
+        <div class="msg"><div class="wa"><svg data-i="wa"></svg></div><div><b>Nova conversa iniciada</b><span>Cliente pedindo orçamento</span></div></div>
+      </div>
+      <div class="rv">
+        <span class="eyebrow">Vantagens</span>
+        <h2 class="h2">O Poder do <span class="hl">Tráfego Pago</span> no Crescimento do Seu Negócio</h2>
+        <div style="margin-top:24px">
+          <p class="t">O tráfego pago permite que sua empresa apareça para pessoas que já estão procurando pelos seus produtos ou serviços, aumentando as oportunidades de contato, orçamento e vendas.</p>
+          <p class="t">Nosso trabalho é criar campanhas estratégicas, analisar os resultados e realizar otimizações constantes para atrair leads cada vez mais qualificados.</p>
+        </div>
+        <div class="checks">
+          <div class="card"><div class="ico"><svg data-i="users"></svg></div>Alcance do público certo</div>
+          <div class="card"><div class="ico"><svg data-i="trend"></svg></div>Geração contínua de oportunidades de negócio</div>
+          <div class="card"><div class="ico"><svg data-i="refresh"></svg></div>Acompanhamento e otimização das campanhas</div>
+          <div class="card"><div class="ico"><svg data-i="bar"></svg></div>Decisões baseadas em dados e métricas</div>
+        </div>
+        <div class="card tip"><div class="ico solid"><svg data-i="bulb"></svg></div><p><b>O tráfego pago é um investimento estratégico.</b>Os resultados dependem de fatores como mercado, concorrência, oferta e processo comercial, mas um trabalho consistente permite identificar oportunidades e melhorar a performance ao longo do tempo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. POSICIONAMENTO META E GOOGLE ============ -->
+<section id="plataformas" class="dark">
+  <div class="glow b" style="width:620px;height:620px;left:50%;top:-200px;transform:translateX(-50%)"></div>
+  <div class="container">
+    <div class="head rv">
+      <span class="eyebrow">O que fazemos</span>
+      <h2 class="h2">Posicionamento no <span class="hl">Meta Ads</span> e no <span class="hl">Google Ads</span></h2>
+    </div>
+    <div class="grid2">
+      <article class="card rv">
+        <div class="im art meta" role="img" aria-label="Anúncio patrocinado no Facebook e Instagram pelo Meta Ads">
+          <div class="post">
+            <div class="ph"><span class="av">JH</span><div><b>Sua Empresa</b><small>Patrocinado · 🌐</small></div></div>
+            <div class="pimg"><span>Orçamento grátis<br><em>Fale no WhatsApp</em></span></div>
+            <div class="pcta"><span>suaempresa.com.br</span><b>Enviar mensagem</b></div>
+          </div>
+          <div class="lg fb"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#1877F2"/><path fill="#fff" d="M26.6 38V26.2h3.9l.6-4.6h-4.5v-2.9c0-1.3.4-2.2 2.3-2.2h2.4v-4.1c-.4-.1-1.8-.2-3.5-.2-3.4 0-5.8 2.1-5.8 6v3.4H18v4.6h4V38h4.6z"/></svg></div>
+          <div class="lg ig"><svg viewBox="0 0 48 48" aria-hidden="true"><defs><radialGradient id="igg" cx="30%" cy="107%" r="150%"><stop offset="0" stop-color="#fdf497"/><stop offset=".08" stop-color="#fdf497"/><stop offset=".45" stop-color="#fd5949"/><stop offset=".6" stop-color="#d6249f"/><stop offset=".9" stop-color="#285AEB"/></radialGradient></defs><rect width="48" height="48" rx="13" fill="url(#igg)"/><rect x="11" y="11" width="26" height="26" rx="8" fill="none" stroke="#fff" stroke-width="3"/><circle cx="24" cy="24" r="6.3" fill="none" stroke="#fff" stroke-width="3"/><circle cx="31.6" cy="16.4" r="1.9" fill="#fff"/></svg></div>
+          <div class="mt"><svg viewBox="0 0 64 32" aria-hidden="true"><defs><linearGradient id="mtg" x1="0" x2="1"><stop offset="0" stop-color="#0064E1"/><stop offset=".5" stop-color="#0082FB"/><stop offset="1" stop-color="#0064E1"/></linearGradient></defs><path d="M8 24c-3 0-5-2.6-5-7.2C3 10.2 6.5 5 10.6 5c3.4 0 5.7 2.6 9 7.8l3.6 5.7c2.8 4.4 4.8 6 7.3 6 2.6 0 4.5-2.4 4.5-6.7 0-5.5-2.7-10.3-6.3-10.3-2.8 0-4.9 2.5-7.4 6.6M8 24c3 0 4.9-1.8 8.5-7.9l2.9-4.9" fill="none" stroke="url(#mtg)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12 1)"/></svg><b>Meta Ads</b></div>
+          <div class="chip-r">❤ 1,2 mil &nbsp; 💬 202</div>
+        </div>
+        <div class="bd">
+          <h3>Meta (Facebook e Instagram)</h3>
+          <p>No <b>Meta Ads,</b> os usuários interagem com anúncios enquanto navegam nas redes sociais. É uma plataforma interativa, onde você pode segmentar seu público com base em interesses, comportamentos e localização. Ideal para atrair a atenção e gerar engajamento.</p>
+          <div class="adv"><svg data-i="check"></svg><span><b>Vantagens:</b> Segmentação precisa, anúncios visuais que geram maior interação e resultados rápidos.</span></div>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="im art goo" role="img" aria-label="Anúncio patrocinado na pesquisa do Google e no Google Maps pelo Google Ads">
+          <div class="serp">
+            <div class="sb"><span class="gl"><i style="color:#4285F4">G</i><i style="color:#EA4335">o</i><i style="color:#FBBC04">o</i><i style="color:#4285F4">g</i><i style="color:#34A853">l</i><i style="color:#EA4335">e</i></span><span class="q">ar-condicionado perto de mim</span></div>
+            <div class="res ad"><small><b>Patrocinado</b> · suaempresa.com.br</small><h6>Sua Empresa — Orçamento Rápido</h6><p>Atendimento na sua região. Ligue agora.</p></div>
+            <div class="res"><span class="ln" style="width:70%"></span><span class="ln" style="width:52%"></span></div>
+          </div>
+          <div class="maps"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#EA4335" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.6" fill="#fff"/></svg><div><b>Sua Empresa</b><small>★★★★★ 4,9 · Aberto</small></div></div>
+          <div class="mt"><svg viewBox="0 0 48 44" aria-hidden="true"><path d="M24 7 L10 33" stroke="#FBBC04" stroke-width="11" stroke-linecap="round"/><path d="M24 7 L38 33" stroke="#4285F4" stroke-width="11" stroke-linecap="round"/><circle cx="10" cy="33" r="6.6" fill="#34A853"/></svg><b>Google Ads</b></div>
+        </div>
+        <div class="bd">
+          <h3>Google Ads</h3>
+          <p>O <b>Google Ads é uma plataforma intencional,</b> onde os usuários já estão buscando ativamente o que você oferece. Seus anúncios aparecem nas buscas e em sites parceiros, com possibilidade de aparecer nas primeiras páginas e no topo da pesquisa.</p>
+          <div class="adv"><svg data-i="check"></svg><span><b>Vantagens:</b> Captura clientes com intenção de compra e garante visibilidade local.</span></div>
+        </div>
+      </article>
+    </div>
+    <article class="card gmn-card rv">
+      <div class="gmap" role="img" aria-label="Ilustração: perfil da sua empresa em destaque no Google Maps, com avaliações e botões de ligar, rotas, site e WhatsApp">
+        <svg class="map" viewBox="0 0 540 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="540" height="520" fill="#eef1f4"/>
+          <path d="M-20 360 C120 330 160 420 300 400 S470 330 560 360 L560 520 L-20 520Z" fill="#cfe6f7"/>
+          <rect x="300" y="40" width="150" height="110" rx="18" fill="#d5ecd9"/>
+          <rect x="40" y="170" width="120" height="90" rx="16" fill="#d5ecd9"/>
+          <g stroke="#fff" stroke-linecap="round" fill="none">
+            <path d="M-10 120 L560 70" stroke-width="16"/>
+            <path d="M-10 290 L560 250" stroke-width="18"/>
+            <path d="M210 -10 L250 540" stroke-width="16"/>
+            <path d="M420 -10 L470 540" stroke-width="12"/>
+            <path d="M80 -10 L120 340" stroke-width="10"/>
+          </g>
+          <g stroke="#f7d774" stroke-linecap="round" fill="none"><path d="M-10 290 L560 250" stroke-width="6"/></g>
+          <g transform="translate(110 120) scale(1)"><path d="M0-22a9 9 0 0 0-9 9c0 7 9 13 9 13s9-6 9-13a9 9 0 0 0-9-9z" fill="#9aa3ad"/><circle cy="-13" r="3.4" fill="#fff"/></g><g transform="translate(360 200) scale(1)"><path d="M0-22a9 9 0 0 0-9 9c0 7 9 13 9 13s9-6 9-13a9 9 0 0 0-9-9z" fill="#9aa3ad"/><circle cy="-13" r="3.4" fill="#fff"/></g><g transform="translate(470 120) scale(0.9)"><path d="M0-22a9 9 0 0 0-9 9c0 7 9 13 9 13s9-6 9-13a9 9 0 0 0-9-9z" fill="#9aa3ad"/><circle cy="-13" r="3.4" fill="#fff"/></g><g transform="translate(160 330) scale(0.9)"><path d="M0-22a9 9 0 0 0-9 9c0 7 9 13 9 13s9-6 9-13a9 9 0 0 0-9-9z" fill="#9aa3ad"/><circle cy="-13" r="3.4" fill="#fff"/></g><g transform="translate(400 330) scale(1)"><path d="M0-22a9 9 0 0 0-9 9c0 7 9 13 9 13s9-6 9-13a9 9 0 0 0-9-9z" fill="#9aa3ad"/><circle cy="-13" r="3.4" fill="#fff"/></g>
+        </svg>
+        <div class="search"><svg data-i="search"></svg><span>assistência técnica perto de mim</span></div>
+        <div class="me">
+          <span class="pulse"></span>
+          <svg viewBox="-12 -26 24 28" aria-hidden="true"><path d="M0-25a11 11 0 0 0-11 11c0 8.5 11 16 11 16s11-7.5 11-16a11 11 0 0 0-11-11z" fill="#EA4335"/><circle cy="-14" r="4.2" fill="#fff"/></svg>
+          <b>Sua Empresa</b>
+        </div>
+        <div class="rank"><small>Resultados no Maps</small><div><i>1</i>Sua Empresa <em>★ 4,9</em></div><div class="o"><i>2</i><span></span></div><div class="o"><i>3</i><span></span></div></div>
+        <div class="prof">
+          <div class="pt"><div><b>Sua Empresa</b><small><span class="st">4,9 ★★★★★</span> (128) · Serviço local</small><small class="op">Aberto agora · Fecha às 18:00</small></div><span class="ver">✓</span></div>
+          <div class="acts">
+            <span><i><svg data-i="phone"></svg></i>Ligar</span>
+            <span><i><svg data-i="nav"></svg></i>Rotas</span>
+            <span><i><svg data-i="globe"></svg></i>Site</span>
+            <span class="wa"><i><svg data-i="wa"></svg></i>WhatsApp</span>
+          </div>
+        </div>
+      </div>
+      <div class="bd">
+        <span class="eyebrow">Perfil da Empresa no Google</span>
+        <h3>Posicionamento no Google Meu Negócio (GMN)</h3>
+        <p>É muito importante que empresas locais estejam cadastradas e bem posicionadas no Google Meu Negócio. Isso porque a maioria dos clientes pesquisa no Google antes de contratar um serviço ou visitar um estabelecimento.</p>
+        <p>Quando seu negócio está configurado corretamente, ele pode aparecer nas pesquisas locais e no Google Maps, facilitando que clientes encontrem sua empresa, entrem em contato e solicitem informações rapidamente.</p>
+        <div class="gchecks">
+          <div class="adv"><svg data-i="check"></svg><span>Mais visibilidade para sua empresa na sua região</span></div>
+          <div class="adv"><svg data-i="check"></svg><span>Facilidade para clientes encontrarem seu negócio</span></div>
+          <div class="adv"><svg data-i="check"></svg><span>Presença no Google Maps e nas buscas locais</span></div>
+          <div class="adv"><svg data-i="check"></svg><span>Mais oportunidades de contato e vendas</span></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 8. POR QUE ANÚNCIOS SOZINHOS NÃO SÃO SUFICIENTES ============ -->
+<section id="sozinhos" class="light" style="background:#fff">
+  <div class="glow b" style="width:600px;height:600px;right:-220px;top:10%"></div>
+  <div class="container">
+    <div class="head rv">
+      <span class="eyebrow">Estratégia Digital</span>
+      <h2 class="h2">Por que anúncios sozinhos <span class="hl">não são suficientes?</span></h2>
+      <p class="lead">Hoje em dia, qualquer pessoa consegue criar e subir um anúncio no Meta Ads ou no Google em poucos minutos. <b class="mark">Mas isso não significa que vai gerar resultados.</b></p>
+    </div>
+
+    <div class="vs">
+      <div class="card bad rv">
+        <h3><i>✕</i>Só subir anúncio</h3>
+        <ul>
+          <li><b>✕</b>Custos altos</li>
+          <li><b>✕</b>Leads sem qualidade</li>
+          <li><b>✕</b>Contatos que não avançam</li>
+          <li><b>✕</b>Pessoas fora do perfil ou até de outras regiões</li>
+        </ul>
+        <p class="note">Um anúncio sem estrutura, sem estratégia e sem método acaba sendo apenas mais um no meio de tantos outros.</p>
+      </div>
+      <div class="mid rv"><span><svg data-i="right"></svg></span></div>
+      <div class="card good rv">
+        <h3><i>✓</i>Estrutura completa</h3>
+        <ul>
+          <li><b>✓</b>Anúncio para o público certo da sua região</li>
+          <li><b>✓</b>Presença profissional que passa confiança</li>
+          <li><b>✓</b>Conteúdo que reforça autoridade</li>
+          <li><b>✓</b>Atendimento rápido e follow-up até fechar</li>
+        </ul>
+        <p class="note">O problema não está em <b>“anunciar”</b>, e sim em como anunciar e o que acontece depois do anúncio.</p>
+      </div>
+    </div>
+
+    <div class="flows">
+      <h3 class="rv">Como ligamos os pontos para <span class="hl">gerar resultado</span></h3>
+      <p class="rv">Não vamos apenas anunciar: vamos montar e cuidar de toda a estrutura que transforma um clique em cliente.</p>
+
+      <div class="flow rv">
+        <div class="fh"><span class="tag"><em>Estratégia 1</em>Meta Ads · Instagram e Facebook</span><small>Ideal para gerar demanda e engajamento</small></div>
+        <div class="steps">
+          <div class="step"><div class="n"><svg data-i="meta"></svg><b>1</b></div><div><h4>Meta Ads gerando movimento</h4><p>Anúncios no Instagram e Facebook para o público certo da sua região, todos os dias.</p></div></div>
+          <div class="step"><div class="n"><svg data-i="globe"></svg><b>2</b></div><div><h4>Site</h4><p>Página profissional que apresenta seus serviços e passa confiança para quem clicou.</p></div></div>
+          <div class="step"><div class="n"><svg data-i="phone"></svg><b>3</b></div><div><h4>Conteúdos reforçando os anúncios</h4><p>Postagens semanais que mostram autoridade quando o cliente visita o seu perfil.</p></div></div>
+          <div class="step"><div class="n"><svg data-i="wa"></svg><b>4</b></div><div><h4>WhatsApp: atendimento e follow-up</h4><p>Atendimento rápido e acompanhamento de cada contato para não perder oportunidades.</p></div></div>
+          <div class="step res"><div class="n"><svg data-i="trend"></svg></div><div><h4>Mais clientes e vendas</h4><p>Movimento constante e previsível para o seu negócio.</p></div></div>
+        </div>
+      </div>
+
+      <div class="flow g rv">
+        <div class="fh"><span class="tag"><em>Estratégia 2</em>Google Ads · Pesquisa e Maps</span><small>Ideal para quem já está procurando o seu serviço</small></div>
+        <div class="steps">
+          <div class="step"><div class="n"><svg data-i="search"></svg><b>1</b></div><div><h4>Google Ads gerando movimento</h4><p>Seu anúncio aparece para quem já está pesquisando o seu serviço agora.</p></div></div>
+          <div class="step"><div class="n"><svg data-i="pin"></svg><b>2</b></div><div><h4>Google Meu Negócio</h4><p>Sua empresa no Google Maps com avaliações, fotos e botão de contato.</p></div></div>
+          <div class="step"><div class="n"><svg data-i="globe"></svg><b>3</b></div><div><h4>Site</h4><p>Página profissional que transforma a visita em pedido de orçamento.</p></div></div>
+          <div class="step"><div class="n"><svg data-i="wa"></svg><b>4</b></div><div><h4>WhatsApp: atendimento e follow-up</h4><p>Atendimento rápido e acompanhamento de cada contato para não perder oportunidades.</p></div></div>
+          <div class="step res"><div class="n"><svg data-i="trend"></svg></div><div><h4>Mais clientes e vendas</h4><p>Clientes com intenção de compra chegando todos os dias.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <h3 class="rv">Por isso, além das campanhas, é fundamental que <span class="hl">toda a base de marketing esteja alinhada:</span></h3>
+      <div class="five">
+        <div class="card rv"><div class="ico"><svg data-i="user"></svg></div>Perfil organizado e profissional</div>
+        <div class="card rv"><div class="ico"><svg data-i="shield"></svg></div>Conteúdo que reforça autoridade e confiança</div>
+        <div class="card rv"><div class="ico"><svg data-i="msg"></svg></div>Estratégia de comunicação clara</div>
+        <div class="card rv"><div class="ico"><svg data-i="zap"></svg></div>Atendimento rápido e estruturado</div>
+        <div class="card rv"><div class="ico"><svg data-i="repeat"></svg></div>Processos de follow-up para não perder oportunidades</div>
+      </div>
+    </div>
+
+    <div class="close rv">
+      <div class="l"><p><b>É exatamente aqui que muitos negócios travam:</b> tentam fazer tudo sozinhos, mas acabam sem tempo, sem estrutura ou sem conhecimento para manter tudo funcionando em conjunto.</p></div>
+      <div class="r"><p>Nós estruturamos todo o ambiente necessário para que os anúncios realmente performem — conectando tráfego, posicionamento, conteúdo e conversão.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. PLANOS ============ -->
+<section id="planos" class="dark">
+  <div class="glow b" style="width:600px;height:600px;left:50%;top:0;transform:translateX(-50%)"></div>
+  <div class="container">
+    <div class="head rv">
+      <span class="eyebrow">Meta Ads | Google Ads | Social Media</span>
+      <h2 class="h2">Planos de <span class="hl">Gestão de Tráfego</span></h2>
+      <p class="lead">VALORES (Referente aos nossos serviços)</p>
+    </div>
+    <div class="plans">
+      <article class="card plan rv">
+        <div class="badges"><span class="badge-min">Mínimo 3 meses</span></div>
+        <h3><span class="plogo"><svg class="lg-meta" viewBox="0 0 64 32" aria-hidden="true"><defs><linearGradient id="mtp" x1="0" x2="1"><stop offset="0" stop-color="#0064E1"/><stop offset=".5" stop-color="#0082FB"/><stop offset="1" stop-color="#0064E1"/></linearGradient></defs><path d="M8 24c-3 0-5-2.6-5-7.2C3 10.2 6.5 5 10.6 5c3.4 0 5.7 2.6 9 7.8l3.6 5.7c2.8 4.4 4.8 6 7.3 6 2.6 0 4.5-2.4 4.5-6.7 0-5.5-2.7-10.3-6.3-10.3-2.8 0-4.9 2.5-7.4 6.6M8 24c3 0 4.9-1.8 8.5-7.9l2.9-4.9" fill="none" stroke="url(#mtp)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12 1)"/></svg></span>Plano de Gestão Meta Ads</h3>
+        <span class="tag-inc">✅ Incluso no Plano:</span>
+        <ul>
+            <li><svg data-i="check"></svg><span>Criação e gerenciamento de anúncios</span></li>
+            <li><svg data-i="check"></svg><span>Acompanhamento diário das campanhas</span></li>
+            <li><svg data-i="check"></svg><span>Otimizações sempre que necessário</span></li>
+            <li><svg data-i="check"></svg><span>Relatórios semanais de desempenho</span></li>
+            <li><svg data-i="check"></svg><span>Suporte direto ao cliente</span></li>
+            <li><svg data-i="check"></svg><span>Criação de site profissional</span></li>
+            <li><svg data-i="check"></svg><span>Criação de postagens semanais para Instagram e Facebook</span></li>
+          </ul>
+        <div class="foot">
+          <div class="verba">
+            <small>🎯 Verba recomendada para anúncios</small>
+            <div class="it"><b>📲 Meta Ads <em>(Instagram e Facebook)</em></b>Mínimo recomendado: R$ 500/mês</div>
+            <div class="it">➡️ Pode ser dividido em depósitos semanais.</div>
+          </div>
+          <div class="valor">
+            <small>💼 Valor do Serviço de Marketing</small>
+            <div class="price">R$ 497<span>/mês</span></div>
+            <p class="pay">➡️ Facilidade de pagamento: <b>2x de R$ 248,50</b> (a cada 15 dias)</p>
+          </div>
+          <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+        </div>
+      </article>
+      <article class="card plan rv">
+        <div class="badges"><span class="badge-min">Mínimo 3 meses</span></div>
+        <h3><span class="plogo"><svg class="lg-gads" viewBox="0 0 48 44" aria-hidden="true"><path d="M24 7 L10 33" stroke="#FBBC04" stroke-width="11" stroke-linecap="round"/><path d="M24 7 L38 33" stroke="#4285F4" stroke-width="11" stroke-linecap="round"/><circle cx="10" cy="33" r="6.6" fill="#34A853"/></svg></span>Plano de Gestão Google Ads</h3>
+        <span class="tag-inc">✅ Incluso no Plano:</span>
+        <ul>
+            <li><svg data-i="check"></svg><span>Criação e gerenciamento de anúncios</span></li>
+            <li><svg data-i="check"></svg><span>Acompanhamento diário das campanhas</span></li>
+            <li><svg data-i="check"></svg><span>Otimizações sempre que necessário</span></li>
+            <li><svg data-i="check"></svg><span>Relatórios semanais de desempenho</span></li>
+            <li><svg data-i="check"></svg><span>Suporte direto ao cliente</span></li>
+            <li><svg data-i="check"></svg><span>Criação de site profissional</span></li>
+            <li><svg data-i="check"></svg><span>Criação e configuração do Google Meu Negócio</span></li>
+          </ul>
+        <div class="foot">
+          <div class="verba">
+            <small>🎯 Verba recomendada para anúncios</small>
+            <div class="it"><b>🔎 Google Ads + Google Meu Negócio</b>Mínimo recomendado: R$ 500/mês</div>
+            <div class="it">➡️ Pode ser dividido em depósitos semanais.</div>
+          </div>
+          <div class="valor">
+            <small>💼 Valor do Serviço de Marketing</small>
+            <div class="price">R$ 597<span>/mês</span></div>
+            <p class="pay">➡️ Facilidade de pagamento: <b>2x de R$ 298,50</b> (a cada 15 dias)</p>
+          </div>
+          <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+        </div>
+      </article>
+      <article class="card plan best rv">
+        <div class="badges"><span class="badge-min">Mínimo 3 meses</span><span class="badge-best">Melhor custo beneficio</span></div>
+        <h3><span class="plogo duo"><svg class="lg-meta" viewBox="0 0 64 32" aria-hidden="true"><defs><linearGradient id="mtp" x1="0" x2="1"><stop offset="0" stop-color="#0064E1"/><stop offset=".5" stop-color="#0082FB"/><stop offset="1" stop-color="#0064E1"/></linearGradient></defs><path d="M8 24c-3 0-5-2.6-5-7.2C3 10.2 6.5 5 10.6 5c3.4 0 5.7 2.6 9 7.8l3.6 5.7c2.8 4.4 4.8 6 7.3 6 2.6 0 4.5-2.4 4.5-6.7 0-5.5-2.7-10.3-6.3-10.3-2.8 0-4.9 2.5-7.4 6.6M8 24c3 0 4.9-1.8 8.5-7.9l2.9-4.9" fill="none" stroke="url(#mtp)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12 1)"/></svg><svg class="lg-gads" viewBox="0 0 48 44" aria-hidden="true"><path d="M24 7 L10 33" stroke="#FBBC04" stroke-width="11" stroke-linecap="round"/><path d="M24 7 L38 33" stroke="#4285F4" stroke-width="11" stroke-linecap="round"/><circle cx="10" cy="33" r="6.6" fill="#34A853"/></svg></span>Plano de Gestão Meta e Google Ads</h3>
+        <span class="tag-inc">✅ Incluso no Plano Completo:</span>
+        <ul>
+            <li><svg data-i="check"></svg><span>Criação e gerenciamento de campanhas Meta Ads e Google Ads</span></li>
+            <li><svg data-i="check"></svg><span>Acompanhamento diário das campanhas</span></li>
+            <li><svg data-i="check"></svg><span>Otimizações sempre que necessário</span></li>
+            <li><svg data-i="check"></svg><span>Relatórios semanais de desempenho</span></li>
+            <li><svg data-i="check"></svg><span>Suporte direto ao cliente</span></li>
+            <li><svg data-i="check"></svg><span>Criação de postagens semanais para Instagram e Facebook</span></li>
+            <li><svg data-i="check"></svg><span>Configuração e otimização do Google Meu Negócio</span></li>
+            <li><svg data-i="check"></svg><span>Criação de site profissional</span></li>
+            <li><svg data-i="check"></svg><span>Criação de anúncios e estratégias de divulgação</span></li>
+          </ul>
+        <div class="foot">
+          <div class="verba">
+            <small>🎯 Verba recomendada para anúncios</small>
+            <div class="it"><b>📲 Meta Ads + 🔎 Google Ads</b>Mínimo recomendado: R$ 500/mês em cada plataforma</div>
+            <div class="it">➡️ Pode ser dividido em depósitos semanais.</div>
+          </div>
+          <div class="valor">
+            <small>💼 Valor do Serviço de Marketing</small>
+            <div class="price">R$ 797<span>/mês</span></div>
+            <p class="pay">➡️ Facilidade de pagamento: <b>2x de R$ 398,50</b> (a cada 15 dias)</p>
+          </div>
+          <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="cond">
+      <div class="card rv"><div class="ico"><svg data-i="file"></svg></div><h4>Contrato</h4><p>Obrigatório, garantindo segurança entre as partes</p></div>
+      <div class="card rv"><div class="ico"><svg data-i="card"></svg></div><h4>Pagamento</h4><p>O pagamento mensal pode ser feito em 2x. 50% no início e 50% com 15 dias</p></div>
+      <div class="card rv"><div class="ico"><svg data-i="target"></svg></div><h4>Verba de anúncios</h4><p>A verba de anúncios é paga separadamente pelo cliente diretamente nas plataformas Meta Ads e Google Ads.</p></div>
+      <div class="card rv"><div class="ico green"><svg data-i="trend"></svg></div><h4>Objetivo</h4><p>Atrair mais clientes, aumentar a presença digital e gerar novas oportunidades de vendas.</p></div>
+    </div>
+
+    <div class="gestao">
+      <h3 class="rv">O que está incluso na <span class="hl">gestão de tráfego pago</span></h3>
+      <div class="grid3">
+        <div class="card row rv"><div class="ico"><svg data-i="target"></svg></div><p>Planejamento estratégico de campanhas no Meta (Facebook e Instagram) e/ou Google</p></div>
+        <div class="card row rv"><div class="ico"><svg data-i="bar"></svg></div><p>Monitoramento e otimização diária com foco em performance e conversão</p></div>
+        <div class="card row rv"><div class="ico"><svg data-i="refresh"></svg></div><p>Ajustes e melhorias contínuas para garantir evolução constante</p></div>
+        <div class="card row rv"><div class="ico"><svg data-i="line"></svg></div><p>Análises semanais com relatórios claros de resultados</p></div>
+        <div class="card row rv"><div class="ico"><svg data-i="headset"></svg></div><p>Suporte direto com o gestor responsável</p></div>
+        <div class="card row rv"><div class="ico"><svg data-i="phone"></svg></div><p>Organização dos perfis e postagens (incluso no plano completo)</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 & 11. FECHAMENTO / CONTATO ============ -->
+<section id="contato" class="dark">
+  <div class="glow b" style="width:700px;height:500px;left:50%;top:30%;transform:translateX(-50%)"></div>
+  <div class="container">
+    <div class="divider"></div>
+    <div style="text-align:center" class="rv">
+      <span class="eyebrow">Contato</span>
+      <h2 class="big">Vamos fechar a <span class="hl">nossa parceria?</span></h2>
+    </div>
+    <div class="card box rv">
+      <div>
+        <div class="jh"><img src="img/jh-circulo.png" alt="Logo JH"></div>
+        <h3>Pronto para vender mais e atrair <span class="hl">novos clientes?</span></h3>
+        <p class="s">Estamos prontos para aumentar suas vendas e atrair mais clientes.</p>
+        <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+      </div>
+      <div class="info">
+        <a class="wa" href="#" target="_blank" rel="noopener"><div class="ico green"><svg data-i="msg"></svg></div><div><small>WhatsApp:</small><span>Clique para iniciar</span></div></a>
+        <a href="mailto:jeudehenrique10@gmail.com"><div class="ico green"><svg data-i="mail"></svg></div><div><small>E-mail:</small><span>jeudehenrique10@gmail.com</span></div></a>
+      </div>
+    </div>
+    <blockquote class="card rv">
+      <span class="qm">“</span>
+      <p>“Se eu estivesse no seu lugar, sabendo o impacto positivo que o tráfego pago pode gerar e sabendo que estou pronto para colocar tudo em prática como gestor, eu investiria nisso!</p>
+      <p>Eu já estou preparado para começar, e a única pessoa que pode decidir seguir em frente ou não é você. Por mim, já estamos prontos para iniciar. E você, vamos seguir em frente ou não?”</p>
+    </blockquote>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <img src="img/jh-company.png" alt="JH Company">
+    <span>© 2026 JH Company. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<script>
+// WhatsApp: mesmo número do site agenciajhcompany.com — troque aqui se precisar
+var WHATSAPP = 'https://api.whatsapp.com/send?phone=5521968133292&text=' + encodeURIComponent('Olá, vi a proposta comercial e gostaria de mais informações.');
+document.querySelectorAll('a.wa').forEach(function(a){a.href=WHATSAPP});
+
+// Ícones (estilo Lucide)
+var P={
+ wa:'<path fill="currentColor" stroke="none" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41Z"/>',
+ menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',
+ x:'<path d="M18 6 6 18M6 6l12 12"/>',
+ target:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+ users:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+ user:'<circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>',
+ trend:'<path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/>',
+ check:'<path d="M20 6 9 17l-5-5"/>',
+ bar:'<path d="M3 3v18h18M18 17V9M13 17V5M8 17v-3"/>',
+ line:'<path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>',
+ pin:'<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+ search:'<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
+ meta:'<path d="M2 15.5c0-4 2.2-8.5 5-8.5 2.6 0 4 3.4 5 5.2 1 1.8 2.4 5.3 5 5.3 1.8 0 3-1.5 3-3.6 0-3.6-2-6.9-4.4-6.9-2.2 0-3.6 2.5-4.6 4.4-1 1.8-2.4 5.1-4.9 5.1C3.3 16.5 2 16.1 2 15.5Z"/>',
+ msg:'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>',
+ mail:'<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>',
+ file:'<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4M16 13H8M16 17H8M10 9H8"/>',
+ card:'<rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/>',
+ refresh:'<path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/>',
+ headset:'<path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>',
+ phone:'<rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/>',
+ bulb:'<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4"/>',
+ shield:'<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+ zap:'<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>',
+ repeat:'<path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/>',
+ nav:'<path d="M3 11 22 2l-9 19-2-8-8-2z"/>',
+ globe:'<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+ right:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+ alert:'<circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>'
+};
+document.querySelectorAll('svg[data-i]').forEach(function(s){
+  s.setAttribute('viewBox','0 0 24 24');s.setAttribute('fill','none');s.setAttribute('stroke','currentColor');
+  s.setAttribute('stroke-width','2');s.setAttribute('stroke-linecap','round');s.setAttribute('stroke-linejoin','round');s.setAttribute('aria-hidden','true');
+  s.innerHTML=P[s.dataset.i]||'';
+});
+
+// Faixa de resultados: duplica os cards para o loop contínuo
+(function(){
+  var track=document.querySelector('.carousel .track');if(!track)return;
+  var orig=[].slice.call(track.children);
+  orig.forEach(function(s){var c=s.cloneNode(true);c.setAttribute('aria-hidden','true');track.appendChild(c)});
+  track.style.setProperty('--dur',(orig.length*5)+'s');
+})();
+
+// Faixa de logos dos clientes
+(function(){
+  var t=document.querySelector("#clientes .logos");if(!t)return;
+  var o=[].slice.call(t.children);
+  o.forEach(function(s){var c=s.cloneNode(true);c.setAttribute("aria-hidden","true");t.appendChild(c)});
+  t.style.setProperty("--dur",(o.length*4)+"s");
+})();
+
+// Animação ao rolar
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

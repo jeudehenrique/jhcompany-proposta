@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "proposta",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["C:/Users/jeude/AppData/Local/Temp/claude/C--Users-jeude-OneDrive--rea-de-Trabalho-EMPRESAS-JH-EMPRESA-PASTA-PROPOSTA-SITE/965cdb27-4370-486e-b00a-2ebd02d6df60/scratchpad/serve.mjs", "C:/Users/jeude/OneDrive/Área de Trabalho/EMPRESAS/JH EMPRESA/PASTA PROPOSTA SITE", "5180"],
+      "port": 5180
+    }
+  ]
+}
