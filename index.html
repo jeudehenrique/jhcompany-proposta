@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Proposta Comercial | JH Company – Gestão de Tráfego Pago</title>
+<title>Proposta Comercial | JH Company – Marketing Digital e Tráfego Pago</title>
 <meta name="description" content="Marketing Digital – Proposta Comercial. Gestão de Tráfego Pago para Negócios Locais e Prestadores de Serviços.">
 <link rel="icon" href="img/jh-circulo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -549,6 +550,61 @@ footer img{height:46px;width:auto}
   footer .container{flex-direction:column;text-align:center}
 }
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.float,.pillf{animation:none}html{scroll-behavior:auto}}
+
+/* ---------- extras da versão direcionada ---------- */
+.agenda{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:40px auto 0;max-width:780px}
+.agenda .ag-t{width:100%;font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:4px;background:none;border:0;padding:0}
+.agenda span{font-size:13px;padding:7px 12px;border-radius:99px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.82)}
+.agenda b{color:var(--blue-light);margin-right:6px}
+.grid3c{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.fbk{padding:26px;display:flex;flex-direction:column}
+.dark .fbk{background:linear-gradient(135deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1)}
+.fbk p{font-size:15.5px;line-height:1.6;color:rgba(255,255,255,.85);margin-top:14px;flex:1}
+.fbk .stars{color:#f5a623;font-size:15px;letter-spacing:2px}
+.fbk .who{display:block;margin-top:18px;font-weight:700;font-size:15px;color:#fff}
+.fbk .who small{display:block;font-weight:500;font-size:12.5px;color:rgba(255,255,255,.55);margin-top:2px}
+.fbk .tag{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:5px 10px;border-radius:99px;color:#5fd38a;background:rgba(52,168,83,.12);border:1px solid rgba(52,168,83,.3)}
+@media (max-width:960px){.grid3c{grid-template-columns:1fr}}
+
+/* ---------- refinamento: feedbacks no formato do site ---------- */
+#resultados.dark .slide p{color:rgba(255,255,255,.7)}
+#resultados.dark .slide .shot{border-color:rgba(255,255,255,.1);box-shadow:0 30px 60px -24px rgba(0,0,0,.7)}
+#resultados .fbwrap{margin-top:80px}
+.gr{flex:0 0 340px;padding:24px;display:flex;flex-direction:column}
+.gr .gh{display:flex;align-items:center;gap:12px}
+.gr .av{width:44px;height:44px;border-radius:50%;overflow:hidden;display:grid;place-items:center;flex:none;background:linear-gradient(135deg,#0284c5,#00abf5);font:700 15px 'Poppins',sans-serif;color:#fff}
+.gr .av img{width:100%;height:100%;object-fit:cover}
+.gr .gh b{display:flex;align-items:center;gap:6px;font-size:15px;color:#fff}
+.gr .vf{width:15px;height:15px;flex:none}
+.gr small{font-size:12.5px;color:rgba(255,255,255,.55)}
+.gr small b{display:inline;font-size:12.5px;color:rgba(255,255,255,.8)}
+.gr .stars{color:#f5a623;letter-spacing:2px;font-size:15px;margin-top:14px}
+.gr p{font-size:15px;line-height:1.55;color:rgba(255,255,255,.85);margin-top:10px}
+.gp{flex:0 0 320px;padding:12px;display:flex;flex-direction:column}
+.gim{height:430px;border-radius:12px;background:#0d0d0d;display:grid;place-items:center;overflow:hidden}
+.gim img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.gp .gb{padding:14px 6px 6px;display:flex;flex-direction:column;gap:8px;flex:1}
+.gp .tg{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.gp .tg small{font-size:12px;color:rgba(255,255,255,.55)}
+.gp .tagc{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:4px 10px;border-radius:99px;border:1px solid}
+.gp .t-res{color:#4db3ff;background:rgba(0,171,245,.1);border-color:rgba(0,171,245,.3)}
+.gp .t-ren{color:#5fd38a;background:rgba(52,168,83,.12);border-color:rgba(52,168,83,.3)}
+.gp .t-elo{color:#f5b942;background:rgba(245,166,35,.1);border-color:rgba(245,166,35,.3)}
+.gp p{font-size:14px;line-height:1.5;color:rgba(255,255,255,.8)}
+/* contato em fundo claro */
+#contato.light .box .s{color:var(--muted)}
+#contato.light .info a{background:#f6f7f9;border-color:#e5e7eb}
+#contato.light .info small{color:var(--muted)}
+@media (max-width:600px){
+  .gr{flex-basis:290px}
+  .gp{flex-basis:270px}
+  .gim{height:360px}
+}
+
+/* ---------- refinamento 2 ---------- */
+.bonusrow{margin:26px auto 0;max-width:980px;display:flex;gap:16px;align-items:flex-start;padding:24px;background:linear-gradient(135deg,rgba(2,132,197,.16),rgba(0,171,245,.05))!important;border:1px solid rgba(0,171,245,.35)!important}
+.bonusrow h3{font-size:18px;font-weight:700;color:#fff}
+.bonusrow p{font-size:15px;color:rgba(255,255,255,.85);margin-top:6px;line-height:1.55}
 </style>
 </head>
 <body>
@@ -581,10 +637,14 @@ footer img{height:46px;width:auto}
       <div class="stat"><div class="ico"><svg data-i="search"></svg></div><b>Google Ads</b><span>Buscas e sites parceiros</span></div>
       <div class="stat"><div class="ico"><svg data-i="pin"></svg></div><b>GMN</b><span>Google Meu Negócio</span></div>
     </div>
+    <div class="agenda rv">
+      <span class="ag-t">Nesta proposta</span>
+      <span><b>01</b>Quem somos</span><span><b>02</b>Resultados</span><span><b>03</b>O cenário</span><span><b>04</b>Onde atuamos</span><span><b>05</b>O caminho</span><span><b>06</b>Planos</span><span><b>07</b>Começar</span>
+    </div>
   </div>
 </section>
 
-<!-- ============ 2. QUEM SOU ============ -->
+<!-- ============ 2. QUEM SOMOS ============ -->
 <section id="quem" class="light">
   <div class="glow b" style="width:500px;height:500px;left:-160px;top:30%"></div>
   <div class="container">
@@ -592,68 +652,31 @@ footer img{height:46px;width:auto}
     <div class="grid2">
       <div class="wrap-pic rv">
         <div class="pic">
-          <img src="img/jeude-quem-sou.webp" alt="Jeúde Henrique, gestor de tráfego pago, com painéis de resultados de Meta Ads e Google Ads">
-          <div class="name"><b>Jeúde Henrique</b><span>Gestor de tráfego pago e Marketing p/ Negócios Locais</span></div>
+          <img src="img/jeude-quem-sou.webp" alt="Jeúde Henrique, idealizador e fundador da JH Company">
+          <div class="name"><b>Jeúde Henrique</b><span>Idealizador e fundador da JH Company</span></div>
         </div>
       </div>
       <div class="rv">
-        <span class="eyebrow">Quem Sou?</span>
-        <h2 class="h2">Me chamo <span class="hl">Jeúde Henrique</span></h2>
-        <p class="tag">Sou gestor de tráfego pago, especializado em negócios locais.</p>
+        <span class="eyebrow">01 · Quem somos</span>
+        <h2 class="h2">Somos a <span class="hl">JH Company</span></h2>
+        <p class="tag">Especialistas em tráfego pago para negócios locais. A nossa função é gerar resultado.</p>
         <div class="bar"></div>
-        <p class="t">Minha missão é atrair clientes qualificados para sua empresa por meio de campanhas segmentadas, utilizando <span class="mark">Meta Ads</span> (Facebook e Instagram), <span class="mark">Google Ads</span> e estratégias de posicionamento no <span class="mark">Google Meu Negócio.</span></p>
-        <p class="t">Atuo no Marketing digital desde 2018. Iniciei com a produção de infoprodutos (cursos online e mentorias), participando de todo o processo, desde a criação até a venda final.</p>
-        <p class="t">Desde 2024, meu foco está voltado exclusivamente para o <span class="mark">Tráfego pago,</span> atendendo Negócios locais. Meu objetivo é entregar resultados consistentes e escaláveis para empresas que desejam crescer através da internet.</p>
+        <p class="t">Nossa missão é conectar empresas locais a mais clientes na internet. Trabalhamos com <span class="mark">Meta Ads</span> (Facebook e Instagram), <span class="mark">Google Ads</span> e <span class="mark">Google Meu Negócio</span> e cuidamos de tudo que sustenta os anúncios: imagens, vídeos, postagens e site.</p>
+        <p class="t">Muitas empresas ainda não exploram a internet, um meio que já gerou resultado para muita gente. Hoje os concorrentes já estão posicionados e vendendo. O nosso objetivo é colocar o seu negócio nas principais plataformas, de forma profissional.</p>
+        <p class="t">Idealizador e fundador: <b>Jeúde Henrique</b>, no marketing digital desde 2018 e, desde 2024, com foco exclusivo em <span class="mark">tráfego pago para negócios locais</span>. Gerenciamos contas que já somam mais de <b>R$ 100 mil</b> investidos em anúncios.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 3. MÉTODO / COMUNIDADE SUBIDO ============ -->
-<section id="subido" class="dark">
-  <div class="glow b" style="width:560px;height:560px;right:-200px;top:-100px"></div>
-  <div class="container">
-    <div class="grid2">
-      <article class="card rv">
-        <span class="eyebrow">Formação</span>
-        <div class="top">
-          <img src="img/pedro.jpg" alt="Pedro Sobral">
-          <div>
-            <h3>Método <span class="hl">Subido</span></h3>
-            <h4>Pedro Sobral | Gestor de Tráfego e Especialista em Anúncios Online</h4>
-          </div>
-        </div>
-        <div>
-          <p>Tenho o orgulho de ser aluno de Pedro Sobral, um dos maiores especialistas em tráfego pago e anúncios online do Brasil.</p>
-          <p>Reconhecido por formar milhares de gestores e por contribuir diretamente para o crescimento do mercado de marketing digital no país, Pedro é referência quando o assunto é estratégia, performance e geração de resultados através da mídia paga.</p>
-        </div>
-      </article>
-      <article class="card rv">
-        <span class="eyebrow">Comunidade</span>
-        <div class="top">
-          <div class="logo-box"><img class="lg" src="img/subido.png" alt="Subido – Comunidade Subido de Tráfego"></div>
-        </div>
-        <div>
-          <h3>Comunidade <span class="hl">Subido</span></h3>
-          <h4>A comunidade Subido é um grupo seleto de gestores</h4>
-        </div>
-        <div>
-          <p>Faço parte da Comunidade Subido, uma das maiores comunidades de tráfego pago do Brasil. Nela, gestores compartilham estratégias, experiências e conhecimentos com um único objetivo: <span class="mark">gerar mais resultados para seus clientes.</span></p>
-          <p>Esse ambiente de troca constante permite acesso a métodos validados na prática, networking qualificado e aprendizado contínuo com profissionais que atuam diariamente no mercado.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 4. RESULTADOS REAIS ============ -->
-<section id="resultados" class="light" style="background:#fff">
-  <div class="glow b" style="width:600px;height:600px;left:-220px;top:20%"></div>
-  <div class="glow b" style="width:500px;height:500px;right:-200px;bottom:-100px"></div>
+<!-- ============ 3. RESULTADOS, EMPRESAS E FEEDBACKS ============ -->
+<section id="resultados" class="dark" style="background:#111">
+  <div class="glow b" style="width:600px;height:600px;left:-220px;top:10%"></div>
+  <div class="glow b" style="width:500px;height:500px;right:-200px;bottom:5%"></div>
   <div class="container">
     <div class="divider"></div>
     <div class="head rv">
-      <span class="eyebrow"><svg data-i="bar" style="width:14px;height:14px"></svg>Google/Meta</span>
+      <span class="eyebrow"><svg data-i="bar" style="width:14px;height:14px"></svg>02 · Resultados</span>
       <h2 class="h2">Resultados <span class="hl">reais</span></h2>
     </div>
     <div class="carousel rv" role="region" aria-roledescription="carousel" aria-label="Resultados de clientes">
@@ -726,21 +749,10 @@ footer img{height:46px;width:auto}
         </article>
       </div>
     </div>
-    <div class="points">
-      <div class="card row rv"><div class="ico"><svg data-i="trend"></svg></div><p>Esses são resultados reais que geraram vendas para empresas locais.</p></div>
-      <div class="card row rv"><div class="ico"><svg data-i="target"></svg></div><p>A mesma estratégia validada será aplicada no seu negócio, com ajustes conforme sua realidade.</p></div>
-      <div class="card row rv"><div class="ico"><svg data-i="zap"></svg></div><p>Meu foco não é apenas subir campanhas, mas gerar resultados — como já fiz com outros clientes.</p></div>
-      <div class="card row rv"><div class="ico"><svg data-i="shield"></svg></div><p>Cada empresa tem suas particularidades, mas com a estratégia certa, os resultados vêm.</p></div>
-    </div>
-  </div>
-</section>
 
-<!-- ============ 4b. CLIENTES ============ -->
-<section id="clientes" class="dark">
-  <div class="glow b" style="width:620px;height:620px;left:50%;top:-180px;transform:translateX(-50%)"></div>
-  <div class="container">
+    <div id="clientes" style="margin-top:80px">
     <div class="head rv">
-      <span class="eyebrow">Cases de sucesso</span>
+      <span class="eyebrow">03 · Empresas que confiaram</span>
       <h2 class="h2">Empresas que <span class="hl">confiaram</span> na nossa expertise</h2>
     </div>
     <div class="lmq rv">
@@ -757,7 +769,36 @@ footer img{height:46px;width:auto}
       <div class="card logo"><div class="c"><img src="img/cliente-limpezaajato.png" alt="Limpeza a Jato"></div><span>LIMPEZA A JATO</span></div>
       </div>
     </div>
-    <p class="quote rv">“Estratégias que Aumentam o Sucesso de Negócios Locais e Serviços Especializados”</p>
+    </div>
+
+    <div class="fbwrap">
+      <div class="head rv">
+        <span class="eyebrow"><svg data-i="star" style="width:14px;height:14px;color:#f5a623"></svg>Feedbacks</span>
+        <h2 class="h2">O que nossos <span class="hl">clientes dizem</span></h2>
+        <p class="lead">Avaliações publicadas no Google e no WhatsApp por clientes que confiaram na gestão de tráfego pago da JH Company.</p>
+      </div>
+      <div class="carousel fmq rv"><div class="track" data-s="5">
+          <article class="card gr"><div class="gh"><span class="av"><img src="img/feedbacks/av-jn7.webp" alt="JN7 FPS"></span><div><b>JN7 FPS<svg class="vf" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2f80ed"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b><small>Postado no <b>Google</b></small></div></div><div class="stars">★★★★★</div><p>o melhor da regiao sem mais mais!</p></article>
+          <article class="card gr"><div class="gh"><span class="av">JV</span><div><b>Jandson Vitorino<svg class="vf" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2f80ed"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b><small>Postado no <b>Google</b></small></div></div><div class="stars">★★★★★</div><p>Super recomendo, o melhor que já trabalhei em toda minha carreira nesse mundo de vendas.</p></article>
+          <article class="card gr"><div class="gh"><span class="av"><img src="img/feedbacks/av-traders.webp" alt="Traders Class"></span><div><b>Traders Class<svg class="vf" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2f80ed"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b><small>Postado no <b>Google</b></small></div></div><div class="stars">★★★★★</div><p>Ótima experiência. Equipe competente, organizada e com foco em resultado real. Ajustaram as campanhas rápido e melhoraram a qualidade dos leads. Recomendo para quem quer crescer com previsibilidade.</p></article>
+          <article class="card gr"><div class="gh"><span class="av">DL</span><div><b>Deivid Luiz<svg class="vf" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2f80ed"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b><small>Postado no <b>Google</b></small></div></div><div class="stars">★★★★★</div><p>Excelente experiência com a gestão de tráfego!</p></article>
+          <article class="card gr"><div class="gh"><span class="av">JO</span><div><b>Jardilene de Oliveira<svg class="vf" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2f80ed"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b><small>Postado no <b>Google</b></small></div></div><div class="stars">★★★★★</div><p>Atendimento e suporte de qualidade! Surpreende as expectativas...</p></article>
+          <article class="card gr"><div class="gh"><span class="av">RV</span><div><b>Renylson Victor<svg class="vf" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2f80ed"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b><small>Postado no <b>Google</b></small></div></div><div class="stars">★★★★★</div><p>Muito bom.</p></article>
+          <article class="card gr"><div class="gh"><span class="av"><img src="img/feedbacks/av-bruno.webp" alt="Bruno Washington"></span><div><b>Bruno Washington<svg class="vf" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2f80ed"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b><small>Postado no <b>Google</b></small></div></div><div class="stars">★★★★★</div><p>Recomendo demais a gestão de tráfego!</p></article>
+      </div></div>
+      <div class="carousel fmq rv" style="margin-top:28px"><div class="track" data-s="6">
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/resultado-climatizacao.webp" alt="Conversa com cliente: 37 leads no Meta em uma semana, a R$ 2,98 por lead — e o cliente comemorou o resultado." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado</span><small>Climatização</small></div><p>37 leads no Meta em uma semana, a R$ 2,98 por lead — e o cliente comemorou o resultado.</p></div></article>
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/plano-anual.webp" alt="Conversa com cliente: Cliente decidiu fechar um plano de 1 ano com Meta Ads, Google Ads e site." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-ren">Renovação</span><small>Plano anual</small></div><p>Cliente decidiu fechar um plano de 1 ano com Meta Ads, Google Ads e site.</p></div></article>
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/renova-sofa.webp" alt="Conversa com cliente: Cliente relatou 3 serviços fechados na semana (R$ 350, R$ 150 e R$ 100)." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado</span><small>Renova Sofá · Higienização de sofás</small></div><p>Cliente relatou 3 serviços fechados na semana (R$ 350, R$ 150 e R$ 100).</p></div></article>
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/renovacao-contrato.webp" alt="Conversa com cliente: Cliente renovou o contrato de marketing para fechar o ano com a JH Company." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-ren">Renovação</span><small>Contrato de marketing</small></div><p>Cliente renovou o contrato de marketing para fechar o ano com a JH Company.</p></div></article>
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/bw-ripados.webp" alt="Conversa com cliente: 4 clientes fechados desde o início das campanhas, com média de R$ 1.000 por venda." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado</span><small>BW Ripados · Painéis ripados</small></div><p>4 clientes fechados desde o início das campanhas, com média de R$ 1.000 por venda.</p></div></article>
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/site-climatizacao.webp" alt="Conversa com cliente: Cliente aprovou o novo site: “O site ficou excelente”." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-elo">Elogio</span><small>Climatização · Site</small></div><p>Cliente aprovou o novo site: “O site ficou excelente”.</p></div></article>
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/clima-tech-clientes.webp" alt="Conversa com cliente: 6 clientes atendidos em uma semana, entre limpezas e instalação." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado</span><small>Clima Tech · Climatização</small></div><p>6 clientes atendidos em uma semana, entre limpezas e instalação.</p></div></article>
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/renovacao-refrigeracao.webp" alt="Conversa com cliente: Ao fim do contrato de 3 meses, o cliente seguiu com a renovação dos anúncios." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-ren">Renovação</span><small>Refrigeração</small></div><p>Ao fim do contrato de 3 meses, o cliente seguiu com a renovação dos anúncios.</p></div></article>
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/climatech-video.webp" alt="Conversa com cliente: O cliente identificou o vídeo que gerou os fechamentos — o criativo produzido pela JH Company." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado</span><small>Clima Tech · Climatização</small></div><p>O cliente identificou o vídeo que gerou os fechamentos — o criativo produzido pela JH Company.</p></div></article>
+          <article class="card gp"><div class="gim"><img src="img/feedbacks/higienizacao.webp" alt="Conversa com cliente: Leads de um dia geraram um fechamento de higienização de R$ 300." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado</span><small>Climatização · Higienização</small></div><p>Leads de um dia geraram um fechamento de higienização de R$ 300.</p></div></article>
+      </div></div>
+    </div>
   </div>
 </section>
 
@@ -796,11 +837,12 @@ footer img{height:46px;width:auto}
         <div class="msg"><div class="wa"><svg data-i="wa"></svg></div><div><b>Nova conversa iniciada</b><span>Cliente pedindo orçamento</span></div></div>
       </div>
       <div class="rv">
-        <span class="eyebrow">Vantagens</span>
+        <span class="eyebrow">03 · O cenário atual</span>
         <h2 class="h2">O Poder do <span class="hl">Tráfego Pago</span> no Crescimento do Seu Negócio</h2>
         <div style="margin-top:24px">
           <p class="t">O tráfego pago permite que sua empresa apareça para pessoas que já estão procurando pelos seus produtos ou serviços, aumentando as oportunidades de contato, orçamento e vendas.</p>
           <p class="t">Nosso trabalho é criar campanhas estratégicas, analisar os resultados e realizar otimizações constantes para atrair leads cada vez mais qualificados.</p>
+          <p class="t">Hoje os seus concorrentes já estão posicionados no Meta Ads, no Google e no Google Meu Negócio, e estão vendendo. Quem não aparece, não é lembrado na hora da decisão.</p>
         </div>
         <div class="checks">
           <div class="card"><div class="ico"><svg data-i="users"></svg></div>Alcance do público certo</div>
@@ -808,7 +850,6 @@ footer img{height:46px;width:auto}
           <div class="card"><div class="ico"><svg data-i="refresh"></svg></div>Acompanhamento e otimização das campanhas</div>
           <div class="card"><div class="ico"><svg data-i="bar"></svg></div>Decisões baseadas em dados e métricas</div>
         </div>
-        <div class="card tip"><div class="ico solid"><svg data-i="bulb"></svg></div><p><b>O tráfego pago é um investimento estratégico.</b>Os resultados dependem de fatores como mercado, concorrência, oferta e processo comercial, mas um trabalho consistente permite identificar oportunidades e melhorar a performance ao longo do tempo.</p></div>
       </div>
     </div>
   </div>
@@ -819,7 +860,7 @@ footer img{height:46px;width:auto}
   <div class="glow b" style="width:620px;height:620px;left:50%;top:-200px;transform:translateX(-50%)"></div>
   <div class="container">
     <div class="head rv">
-      <span class="eyebrow">O que fazemos</span>
+      <span class="eyebrow">04 · Onde posicionamos a sua empresa</span>
       <h2 class="h2">Posicionamento no <span class="hl">Meta Ads</span> e no <span class="hl">Google Ads</span></h2>
     </div>
     <div class="grid2">
@@ -908,81 +949,29 @@ footer img{height:46px;width:auto}
   </div>
 </section>
 
-<!-- ============ 8. POR QUE ANÚNCIOS SOZINHOS NÃO SÃO SUFICIENTES ============ -->
+<!-- ============ 7. O CAMINHO ============ -->
 <section id="sozinhos" class="light" style="background:#fff">
   <div class="glow b" style="width:600px;height:600px;right:-220px;top:10%"></div>
   <div class="container">
     <div class="head rv">
-      <span class="eyebrow">Estratégia Digital</span>
-      <h2 class="h2">Por que anúncios sozinhos <span class="hl">não são suficientes?</span></h2>
-      <p class="lead">Hoje em dia, qualquer pessoa consegue criar e subir um anúncio no Meta Ads ou no Google em poucos minutos. <b class="mark">Mas isso não significa que vai gerar resultados.</b></p>
+      <span class="eyebrow">05 · O caminho</span>
+      <h2 class="h2">Do primeiro anúncio ao <span class="hl">crescimento da sua empresa</span></h2>
+      <p class="lead">Um passo a passo: cada etapa prepara a próxima, e a gente evolui junto com o seu negócio.</p>
     </div>
 
-    <div class="vs">
-      <div class="card bad rv">
-        <h3><i>✕</i>Só subir anúncio</h3>
-        <ul>
-          <li><b>✕</b>Custos altos</li>
-          <li><b>✕</b>Leads sem qualidade</li>
-          <li><b>✕</b>Contatos que não avançam</li>
-          <li><b>✕</b>Pessoas fora do perfil ou até de outras regiões</li>
-        </ul>
-        <p class="note">Um anúncio sem estrutura, sem estratégia e sem método acaba sendo apenas mais um no meio de tantos outros.</p>
-      </div>
-      <div class="mid rv"><span><svg data-i="right"></svg></span></div>
-      <div class="card good rv">
-        <h3><i>✓</i>Estrutura completa</h3>
-        <ul>
-          <li><b>✓</b>Anúncio para o público certo da sua região</li>
-          <li><b>✓</b>Presença profissional que passa confiança</li>
-          <li><b>✓</b>Conteúdo que reforça autoridade</li>
-          <li><b>✓</b>Atendimento rápido e follow-up até fechar</li>
-        </ul>
-        <p class="note">O problema não está em <b>“anunciar”</b>, e sim em como anunciar e o que acontece depois do anúncio.</p>
+    <div class="flow rv">
+      <div class="fh"><span class="tag"><em>Passo a passo</em>Como vamos posicionar a sua empresa</span><small>Quem está começando segue na ordem. Quem já investe pode iniciar as etapas juntas.</small></div>
+      <div class="steps">
+        <div class="step"><div class="n"><svg data-i="meta"></svg><b>1</b></div><div><h4>Meta Ads, redes sociais e WhatsApp</h4><p>Anúncios no Facebook e no Instagram enquanto as imagens e postagens são publicadas nas redes, fortalecendo o perfil. Também organizamos o WhatsApp Business.</p></div></div>
+        <div class="step"><div class="n"><svg data-i="globe"></svg><b>2</b></div><div><h4>Site</h4><p>Um site que atrai e convence. Entregue sem custo em contratos a partir de 3 meses. Os anúncios levam as pessoas para o site, e o site também aparece na busca do Google.</p></div></div>
+        <div class="step"><div class="n"><svg data-i="search"></svg><b>3</b></div><div><h4>Google Ads e Google Meu Negócio</h4><p>Anúncios para quem pesquisa o seu serviço no Google, e clientes que chegam de forma orgânica pelo Maps. Tudo ligado ao site.</p></div></div>
+        <div class="step res"><div class="n"><svg data-i="trend"></svg></div><div><h4>Resultado</h4><p>Toda a estrutura trabalhando a seu favor, crescendo junto com a sua empresa.</p></div></div>
       </div>
     </div>
 
-    <div class="flows">
-      <h3 class="rv">Como ligamos os pontos para <span class="hl">gerar resultado</span></h3>
-      <p class="rv">Não vamos apenas anunciar: vamos montar e cuidar de toda a estrutura que transforma um clique em cliente.</p>
-
-      <div class="flow rv">
-        <div class="fh"><span class="tag"><em>Estratégia 1</em>Meta Ads · Instagram e Facebook</span><small>Ideal para gerar demanda e engajamento</small></div>
-        <div class="steps">
-          <div class="step"><div class="n"><svg data-i="meta"></svg><b>1</b></div><div><h4>Meta Ads gerando movimento</h4><p>Anúncios no Instagram e Facebook para o público certo da sua região, todos os dias.</p></div></div>
-          <div class="step"><div class="n"><svg data-i="globe"></svg><b>2</b></div><div><h4>Site</h4><p>Página profissional que apresenta seus serviços e passa confiança para quem clicou.</p></div></div>
-          <div class="step"><div class="n"><svg data-i="phone"></svg><b>3</b></div><div><h4>Conteúdos reforçando os anúncios</h4><p>Postagens semanais que mostram autoridade quando o cliente visita o seu perfil.</p></div></div>
-          <div class="step"><div class="n"><svg data-i="wa"></svg><b>4</b></div><div><h4>WhatsApp: atendimento e follow-up</h4><p>Atendimento rápido e acompanhamento de cada contato para não perder oportunidades.</p></div></div>
-          <div class="step res"><div class="n"><svg data-i="trend"></svg></div><div><h4>Mais clientes e vendas</h4><p>Movimento constante e previsível para o seu negócio.</p></div></div>
-        </div>
-      </div>
-
-      <div class="flow g rv">
-        <div class="fh"><span class="tag"><em>Estratégia 2</em>Google Ads · Pesquisa e Maps</span><small>Ideal para quem já está procurando o seu serviço</small></div>
-        <div class="steps">
-          <div class="step"><div class="n"><svg data-i="search"></svg><b>1</b></div><div><h4>Google Ads gerando movimento</h4><p>Seu anúncio aparece para quem já está pesquisando o seu serviço agora.</p></div></div>
-          <div class="step"><div class="n"><svg data-i="pin"></svg><b>2</b></div><div><h4>Google Meu Negócio</h4><p>Sua empresa no Google Maps com avaliações, fotos e botão de contato.</p></div></div>
-          <div class="step"><div class="n"><svg data-i="globe"></svg><b>3</b></div><div><h4>Site</h4><p>Página profissional que transforma a visita em pedido de orçamento.</p></div></div>
-          <div class="step"><div class="n"><svg data-i="wa"></svg><b>4</b></div><div><h4>WhatsApp: atendimento e follow-up</h4><p>Atendimento rápido e acompanhamento de cada contato para não perder oportunidades.</p></div></div>
-          <div class="step res"><div class="n"><svg data-i="trend"></svg></div><div><h4>Mais clientes e vendas</h4><p>Clientes com intenção de compra chegando todos os dias.</p></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="pillars">
-      <h3 class="rv">Por isso, além das campanhas, é fundamental que <span class="hl">toda a base de marketing esteja alinhada:</span></h3>
-      <div class="five">
-        <div class="card rv"><div class="ico"><svg data-i="user"></svg></div>Perfil organizado e profissional</div>
-        <div class="card rv"><div class="ico"><svg data-i="shield"></svg></div>Conteúdo que reforça autoridade e confiança</div>
-        <div class="card rv"><div class="ico"><svg data-i="msg"></svg></div>Estratégia de comunicação clara</div>
-        <div class="card rv"><div class="ico"><svg data-i="zap"></svg></div>Atendimento rápido e estruturado</div>
-        <div class="card rv"><div class="ico"><svg data-i="repeat"></svg></div>Processos de follow-up para não perder oportunidades</div>
-      </div>
-    </div>
-
-    <div class="close rv">
-      <div class="l"><p><b>É exatamente aqui que muitos negócios travam:</b> tentam fazer tudo sozinhos, mas acabam sem tempo, sem estrutura ou sem conhecimento para manter tudo funcionando em conjunto.</p></div>
-      <div class="r"><p>Nós estruturamos todo o ambiente necessário para que os anúncios realmente performem — conectando tráfego, posicionamento, conteúdo e conversão.</p></div>
+    <div class="grid2" style="margin-top:24px;gap:24px;align-items:stretch">
+      <div class="card row rv"><div class="ico"><svg data-i="user"></svg></div><div><h3>Empresa começando</h3><p>Começa pelo passo 1 e, com a base pronta, segue para o site e depois para o Google.</p></div></div>
+      <div class="card row rv"><div class="ico green"><svg data-i="zap"></svg></div><div><h3>Empresa já estruturada</h3><p>Pode iniciar os passos 1, 2 e 3 ao mesmo tempo, com toda a estrutura funcionando junta.</p></div></div>
     </div>
   </div>
 </section>
@@ -992,7 +981,7 @@ footer img{height:46px;width:auto}
   <div class="glow b" style="width:600px;height:600px;left:50%;top:0;transform:translateX(-50%)"></div>
   <div class="container">
     <div class="head rv">
-      <span class="eyebrow">Meta Ads | Google Ads | Social Media</span>
+      <span class="eyebrow">06 · Meta Ads | Google Ads | Social Media</span>
       <h2 class="h2">Planos de <span class="hl">Gestão de Tráfego</span></h2>
       <p class="lead">VALORES (Referente aos nossos serviços)</p>
     </div>
@@ -1002,13 +991,10 @@ footer img{height:46px;width:auto}
         <h3><span class="plogo"><svg class="lg-meta" viewBox="0 0 64 32" aria-hidden="true"><defs><linearGradient id="mtp" x1="0" x2="1"><stop offset="0" stop-color="#0064E1"/><stop offset=".5" stop-color="#0082FB"/><stop offset="1" stop-color="#0064E1"/></linearGradient></defs><path d="M8 24c-3 0-5-2.6-5-7.2C3 10.2 6.5 5 10.6 5c3.4 0 5.7 2.6 9 7.8l3.6 5.7c2.8 4.4 4.8 6 7.3 6 2.6 0 4.5-2.4 4.5-6.7 0-5.5-2.7-10.3-6.3-10.3-2.8 0-4.9 2.5-7.4 6.6M8 24c3 0 4.9-1.8 8.5-7.9l2.9-4.9" fill="none" stroke="url(#mtp)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12 1)"/></svg></span>Plano de Gestão Meta Ads</h3>
         <span class="tag-inc">✅ Incluso no Plano:</span>
         <ul>
-            <li><svg data-i="check"></svg><span>Criação e gerenciamento de anúncios</span></li>
-            <li><svg data-i="check"></svg><span>Acompanhamento diário das campanhas</span></li>
-            <li><svg data-i="check"></svg><span>Otimizações sempre que necessário</span></li>
+            <li><svg data-i="check"></svg><span>Gestão de tráfego pago no Meta Ads: campanhas, acompanhamento diário e otimização</span></li>
+            <li><svg data-i="check"></svg><span>Serviço de social media: postagens semanais no Instagram e no Facebook</span></li>
             <li><svg data-i="check"></svg><span>Relatórios semanais de desempenho</span></li>
             <li><svg data-i="check"></svg><span>Suporte direto ao cliente</span></li>
-            <li><svg data-i="check"></svg><span>Criação de site profissional</span></li>
-            <li><svg data-i="check"></svg><span>Criação de postagens semanais para Instagram e Facebook</span></li>
           </ul>
         <div class="foot">
           <div class="verba">
@@ -1029,13 +1015,10 @@ footer img{height:46px;width:auto}
         <h3><span class="plogo"><svg class="lg-gads" viewBox="0 0 48 44" aria-hidden="true"><path d="M24 7 L10 33" stroke="#FBBC04" stroke-width="11" stroke-linecap="round"/><path d="M24 7 L38 33" stroke="#4285F4" stroke-width="11" stroke-linecap="round"/><circle cx="10" cy="33" r="6.6" fill="#34A853"/></svg></span>Plano de Gestão Google Ads</h3>
         <span class="tag-inc">✅ Incluso no Plano:</span>
         <ul>
-            <li><svg data-i="check"></svg><span>Criação e gerenciamento de anúncios</span></li>
-            <li><svg data-i="check"></svg><span>Acompanhamento diário das campanhas</span></li>
-            <li><svg data-i="check"></svg><span>Otimizações sempre que necessário</span></li>
+            <li><svg data-i="check"></svg><span>Gestão de tráfego pago no Google Ads: acompanhamento diário e otimização</span></li>
+            <li><svg data-i="check"></svg><span>Criação e configuração do Google Meu Negócio</span></li>
             <li><svg data-i="check"></svg><span>Relatórios semanais de desempenho</span></li>
             <li><svg data-i="check"></svg><span>Suporte direto ao cliente</span></li>
-            <li><svg data-i="check"></svg><span>Criação de site profissional</span></li>
-            <li><svg data-i="check"></svg><span>Criação e configuração do Google Meu Negócio</span></li>
           </ul>
         <div class="foot">
           <div class="verba">
@@ -1056,15 +1039,11 @@ footer img{height:46px;width:auto}
         <h3><span class="plogo duo"><svg class="lg-meta" viewBox="0 0 64 32" aria-hidden="true"><defs><linearGradient id="mtp" x1="0" x2="1"><stop offset="0" stop-color="#0064E1"/><stop offset=".5" stop-color="#0082FB"/><stop offset="1" stop-color="#0064E1"/></linearGradient></defs><path d="M8 24c-3 0-5-2.6-5-7.2C3 10.2 6.5 5 10.6 5c3.4 0 5.7 2.6 9 7.8l3.6 5.7c2.8 4.4 4.8 6 7.3 6 2.6 0 4.5-2.4 4.5-6.7 0-5.5-2.7-10.3-6.3-10.3-2.8 0-4.9 2.5-7.4 6.6M8 24c3 0 4.9-1.8 8.5-7.9l2.9-4.9" fill="none" stroke="url(#mtp)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12 1)"/></svg><svg class="lg-gads" viewBox="0 0 48 44" aria-hidden="true"><path d="M24 7 L10 33" stroke="#FBBC04" stroke-width="11" stroke-linecap="round"/><path d="M24 7 L38 33" stroke="#4285F4" stroke-width="11" stroke-linecap="round"/><circle cx="10" cy="33" r="6.6" fill="#34A853"/></svg></span>Plano de Gestão Meta e Google Ads</h3>
         <span class="tag-inc">✅ Incluso no Plano Completo:</span>
         <ul>
-            <li><svg data-i="check"></svg><span>Criação e gerenciamento de campanhas Meta Ads e Google Ads</span></li>
-            <li><svg data-i="check"></svg><span>Acompanhamento diário das campanhas</span></li>
-            <li><svg data-i="check"></svg><span>Otimizações sempre que necessário</span></li>
+            <li><svg data-i="check"></svg><span>Gestão de tráfego pago no Meta Ads e no Google Ads</span></li>
+            <li><svg data-i="check"></svg><span>Serviço de social media: postagens semanais no Instagram e no Facebook</span></li>
+            <li><svg data-i="check"></svg><span>Configuração e otimização do Google Meu Negócio</span></li>
             <li><svg data-i="check"></svg><span>Relatórios semanais de desempenho</span></li>
             <li><svg data-i="check"></svg><span>Suporte direto ao cliente</span></li>
-            <li><svg data-i="check"></svg><span>Criação de postagens semanais para Instagram e Facebook</span></li>
-            <li><svg data-i="check"></svg><span>Configuração e otimização do Google Meu Negócio</span></li>
-            <li><svg data-i="check"></svg><span>Criação de site profissional</span></li>
-            <li><svg data-i="check"></svg><span>Criação de anúncios e estratégias de divulgação</span></li>
           </ul>
         <div class="foot">
           <div class="verba">
@@ -1082,11 +1061,12 @@ footer img{height:46px;width:auto}
       </article>
     </div>
 
-    <div class="cond">
-      <div class="card rv"><div class="ico"><svg data-i="file"></svg></div><h4>Contrato</h4><p>Obrigatório, garantindo segurança entre as partes</p></div>
-      <div class="card rv"><div class="ico"><svg data-i="card"></svg></div><h4>Pagamento</h4><p>O pagamento mensal pode ser feito em 2x. 50% no início e 50% com 15 dias</p></div>
-      <div class="card rv"><div class="ico"><svg data-i="target"></svg></div><h4>Verba de anúncios</h4><p>A verba de anúncios é paga separadamente pelo cliente diretamente nas plataformas Meta Ads e Google Ads.</p></div>
-      <div class="card rv"><div class="ico green"><svg data-i="trend"></svg></div><h4>Objetivo</h4><p>Atrair mais clientes, aumentar a presença digital e gerar novas oportunidades de vendas.</p></div>
+        <div class="card row rv bonusrow"><div class="ico solid"><svg data-i="globe"></svg></div><div><h3>Bônus exclusivo: site grátis</h3><p>Para contratos a partir de 3 meses, o site profissional é entregue sem custo. Pode ser usado nos planos Meta Ads, Google Ads e no plano completo.</p></div></div>
+<div class="cond">
+      <div class="card rv"><div class="ico"><svg data-i="file"></svg></div><h4>Contrato</h4><p>Mínimo de 3 meses. Obrigatório, garantindo segurança para as duas partes.</p></div>
+      <div class="card rv"><div class="ico"><svg data-i="card"></svg></div><h4>Pagamento</h4><p>Mensal, em 2x a cada 15 dias.</p></div>
+      <div class="card rv"><div class="ico"><svg data-i="target"></svg></div><h4>Verba de anúncios</h4><p>Mínimo recomendado de R$ 500/mês em cada plataforma. Paga direto na plataforma e pode ser dividida em depósitos semanais.</p></div>
+      <div class="card rv"><div class="ico green"><svg data-i="trend"></svg></div><h4>Objetivo</h4><p>Atrair clientes, fortalecer a presença digital e gerar oportunidades de venda.</p></div>
     </div>
 
     <div class="gestao">
@@ -1104,34 +1084,29 @@ footer img{height:46px;width:auto}
 </section>
 
 <!-- ============ 10 & 11. FECHAMENTO / CONTATO ============ -->
-<section id="contato" class="dark">
+<section id="contato" class="light">
   <div class="glow b" style="width:700px;height:500px;left:50%;top:30%;transform:translateX(-50%)"></div>
   <div class="container">
     <div class="divider"></div>
     <div style="text-align:center" class="rv">
-      <span class="eyebrow">Contato</span>
-      <h2 class="big">Vamos fechar a <span class="hl">nossa parceria?</span></h2>
+      <span class="eyebrow">07 · Próximo passo</span>
+      <h2 class="big">Vamos fechar <span class="hl">nossa parceria?</span></h2>
+      <p class="lead" style="margin:18px auto 0;max-width:760px">Nosso objetivo é gerar resultado para o seu negócio, seja ele um negócio que já funciona ou um que está começando agora. Se está começando, melhor ainda: a gente cresce junto.</p>
     </div>
     <div class="card box rv">
       <div>
         <div class="jh"><img src="img/jh-circulo.png" alt="Logo JH"></div>
-        <h3>Pronto para vender mais e atrair <span class="hl">novos clientes?</span></h3>
-        <p class="s">Estamos prontos para aumentar suas vendas e atrair mais clientes.</p>
-        <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+        <h3>Eu tenho resultado para o seu negócio. <span class="hl">Vamos começar?</span></h3>
+        <p class="s">Escolha o seu primeiro passo e fale comigo agora no WhatsApp.</p>
+        <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Quero fechar a parceria</a>
       </div>
       <div class="info">
         <a class="wa" href="#" target="_blank" rel="noopener"><div class="ico green"><svg data-i="msg"></svg></div><div><small>WhatsApp:</small><span>Clique para iniciar</span></div></a>
         <a href="mailto:jeudehenrique10@gmail.com"><div class="ico green"><svg data-i="mail"></svg></div><div><small>E-mail:</small><span>jeudehenrique10@gmail.com</span></div></a>
       </div>
     </div>
-    <blockquote class="card rv">
-      <span class="qm">“</span>
-      <p>“Se eu estivesse no seu lugar, sabendo o impacto positivo que o tráfego pago pode gerar e sabendo que estou pronto para colocar tudo em prática como gestor, eu investiria nisso!</p>
-      <p>Eu já estou preparado para começar, e a única pessoa que pode decidir seguir em frente ou não é você. Por mim, já estamos prontos para iniciar. E você, vamos seguir em frente ou não?”</p>
-    </blockquote>
   </div>
 </section>
-
 <footer>
   <div class="container">
     <img src="img/jh-company.png" alt="JH Company">
@@ -1173,6 +1148,7 @@ var P={
  nav:'<path d="M3 11 22 2l-9 19-2-8-8-2z"/>',
  globe:'<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
  right:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+ star:'<path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/>',
  alert:'<circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>'
 };
 document.querySelectorAll('svg[data-i]').forEach(function(s){
@@ -1196,6 +1172,13 @@ document.querySelectorAll('svg[data-i]').forEach(function(s){
   o.forEach(function(s){var c=s.cloneNode(true);c.setAttribute("aria-hidden","true");t.appendChild(c)});
   t.style.setProperty("--dur",(o.length*4)+"s");
 })();
+
+// Faixas de feedbacks: duplica os cards para o loop contínuo
+document.querySelectorAll('.fmq .track').forEach(function(t){
+  var o=[].slice.call(t.children);
+  o.forEach(function(s){var c=s.cloneNode(true);c.setAttribute('aria-hidden','true');t.appendChild(c)});
+  t.style.setProperty('--dur',(o.length*(+t.dataset.s||5))+'s');
+});
 
 // Animação ao rolar
 (function(){
