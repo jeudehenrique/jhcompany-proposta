@@ -612,6 +612,13 @@ footer img{height:46px;width:auto}
 .bonusrow{margin:26px auto 0;max-width:980px;display:flex;gap:16px;align-items:flex-start;padding:24px;background:linear-gradient(135deg,rgba(2,132,197,.16),rgba(0,171,245,.05))!important;border:1px solid rgba(0,171,245,.35)!important}
 .bonusrow h3{font-size:18px;font-weight:700;color:#fff}
 .bonusrow p{font-size:15px;color:rgba(255,255,255,.85);margin-top:6px;line-height:1.55}
+
+/* ---------- carrosséis: automáticos e arrastáveis ---------- */
+.carousel,.lmq{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;user-select:none}
+.carousel::-webkit-scrollbar,.lmq::-webkit-scrollbar{display:none}
+.carousel.drag,.lmq.drag{cursor:grabbing}
+.carousel .track,.fmq .track,#clientes .logos{animation:none!important;transform:none!important}
+.carousel img,.fmq img,.lmq img{-webkit-user-drag:none}
 </style>
 <meta name="description" content="Gestão de tráfego pago para negócios locais: o caminho, os planos e os resultados da JH Company.">
 <meta property="og:type" content="website">
@@ -807,6 +814,7 @@ footer img{height:46px;width:auto}
           <article class="card gr"><div class="gh"><span class="av"><img src="img/feedbacks/av-bruno.webp" alt="Bruno Washington"></span><div><b>Bruno Washington<svg class="vf" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2f80ed"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b><small>Postado no <b>Google</b></small></div></div><div class="stars">★★★★★</div><p>Recomendo demais a gestão de tráfego!</p></article>
       </div></div>
       <div class="carousel fmq rv" style="margin-top:28px"><div class="track" data-s="6">
+      <article class="card gp"><div class="gim" style="height:600px"><img src="img/feedbacks/faturamento-prova.jpg" alt="Print de cliente: mês passado faturou em torno de R$ 20 mil com o plano Meta Ads" loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado expressivo</span><small>Plano Meta Ads · R$ 497/mês</small></div><p>Mês passado faturei em torno de R$ 20 mil. Foi um mês agitado, mas dava pra encaixar mais serviço.</p><p style="font-size:12.5px;color:rgba(255,255,255,.55);margin-top:4px">Resultados variam de empresa para empresa.</p></div></article>
           <article class="card gp"><div class="gim"><img src="img/feedbacks/resultado-climatizacao.webp" alt="Conversa com cliente: 37 leads no Meta em uma semana, a R$ 2,98 por lead — e o cliente comemorou o resultado." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado</span><small>Climatização</small></div><p>37 leads no Meta em uma semana, a R$ 2,98 por lead — e o cliente comemorou o resultado.</p></div></article>
           <article class="card gp"><div class="gim"><img src="img/feedbacks/plano-anual.webp" alt="Conversa com cliente: Cliente decidiu fechar um plano de 1 ano com Meta Ads, Google Ads e site." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-ren">Renovação</span><small>Plano anual</small></div><p>Cliente decidiu fechar um plano de 1 ano com Meta Ads, Google Ads e site.</p></div></article>
           <article class="card gp"><div class="gim"><img src="img/feedbacks/renova-sofa.webp" alt="Conversa com cliente: Cliente relatou 3 serviços fechados na semana (R$ 350, R$ 150 e R$ 100)." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado</span><small>Renova Sofá · Higienização de sofás</small></div><p>Cliente relatou 3 serviços fechados na semana (R$ 350, R$ 150 e R$ 100).</p></div></article>
@@ -1202,6 +1210,41 @@ document.querySelectorAll('.fmq .track').forEach(function(t){
   o.forEach(function(s){var c=s.cloneNode(true);c.setAttribute('aria-hidden','true');t.appendChild(c)});
   t.style.setProperty('--dur',(o.length*(+t.dataset.s||5))+'s');
 });
+
+// Carrosséis: andam sozinhos, mas podem ser arrastados com o mouse ou deslizados no celular
+(function(){
+  var wraps=[].slice.call(document.querySelectorAll('.carousel,.lmq'));
+  wraps.forEach(function(w){
+    var t=w.querySelector('.track')||w.querySelector('.logos');
+    if(!t) return;
+    var st={paused:false,drag:false,x:0,start:0,pos:0,timer:null,speed:0.6};
+    function half(){ var k=t.children; if(k.length<2) return t.scrollWidth; return k[k.length/2].offsetLeft-k[0].offsetLeft; }
+    function wrap(){ var h=half(); if(!h) return; if(st.pos>=h) st.pos-=h; else if(st.pos<=0) st.pos+=h; w.scrollLeft=st.pos; }
+    function tick(){
+      if(st.paused||st.drag){ st.pos=w.scrollLeft; }
+      else { st.pos+=st.speed; wrap(); }
+      requestAnimationFrame(tick);
+    }
+    function pause(ms){ st.paused=true; clearTimeout(st.timer); st.timer=setTimeout(function(){st.paused=false;},ms||2000); }
+    w.addEventListener('pointerdown',function(e){
+      if(e.pointerType!=='mouse'){ pause(4000); return; }
+      st.drag=true; st.x=e.clientX; st.start=st.pos=w.scrollLeft; w.classList.add('drag');
+    });
+    w.addEventListener('pointermove',function(e){
+      if(!st.drag) return;
+      st.pos=st.start-(e.clientX-st.x); w.scrollLeft=st.pos; wrap();
+    });
+    function end(){ if(!st.drag) return; st.drag=false; w.classList.remove('drag'); pause(1500); }
+    w.addEventListener('pointerup',end);
+    w.addEventListener('pointercancel',end);
+    w.addEventListener('pointerleave',end);
+    w.addEventListener('wheel',function(){ pause(2500); },{passive:true});
+    w.addEventListener('touchstart',function(){ pause(4000); },{passive:true});
+    w.addEventListener('mouseenter',function(){ st.paused=true; });
+    w.addEventListener('mouseleave',function(){ if(!st.drag){ st.paused=false; } });
+    requestAnimationFrame(tick);
+  });
+})();
 
 // Animação ao rolar
 (function(){
