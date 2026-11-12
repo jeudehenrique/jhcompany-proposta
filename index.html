@@ -398,6 +398,14 @@ section{position:relative;overflow:hidden;isolation:isolate;padding:104px 0}
 #planos .plan .valor{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
 #planos .plan .valor small{display:block;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.6)}
 #planos .plan .price{font-family:'Poppins',sans-serif;font-weight:700;font-size:42px;line-height:1.15;letter-spacing:-.02em;margin-top:4px}
+#planos .plan .price{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+#planos .plan .price .oldw{display:flex;align-items:center;gap:8px;width:100%;margin-bottom:2px}
+#planos .plan .price .de{font-size:14px;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:0}
+#planos .plan .price .old{position:relative;display:inline-block;font-size:22px;font-weight:600;color:#fff;text-decoration:none;letter-spacing:0}
+#planos .plan .price .old::after{content:"";position:absolute;left:-5px;right:-5px;top:52%;height:2px;background:#ff5a4e;transform:rotate(-14deg);border-radius:2px}
+#planos .plan .vagas{display:inline-flex;align-items:center;justify-content:center;gap:8px;align-self:center;margin:14px 0 0;font-size:13.5px;font-weight:700;color:#ff5a4e;background:rgba(255,90,78,.12);border:1px solid rgba(255,90,78,.5);padding:7px 14px;border-radius:99px}
+#planos .plan .vagas i{width:8px;height:8px;border-radius:50%;background:#ff5a4e;box-shadow:0 0 8px #ff5a4e}
+#planos .plan .price .promo{font-style:normal;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:#5fd38a;background:rgba(52,168,83,.14);border:1px solid rgba(52,168,83,.35);padding:4px 9px;border-radius:99px;align-self:center}
 #planos .plan .price span{font-size:17px;font-weight:500;color:rgba(255,255,255,.6);letter-spacing:0;margin-left:2px}
 #planos .plan .pay{font-size:14px;color:rgba(255,255,255,.8);margin-top:6px}
 #planos .plan .pay b{color:var(--green-2);white-space:nowrap}
@@ -1016,10 +1024,11 @@ footer img{height:46px;width:auto}
           </div>
           <div class="valor">
             <small>💼 Valor do Serviço de Marketing</small>
-            <div class="price">R$ 497<span>/mês</span></div>
+            <div class="price"><span class="oldw"><span class="de">De</span><s class="old">R$ 697</s></span>R$ 497<span>/mês</span><em class="promo">Promoção</em></div>
             <p class="pay">➡️ Facilidade de pagamento: <b>2x de R$ 248,50</b> (a cada 15 dias)</p>
           </div>
           <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+          <p class="vagas"><i></i>2 vagas disponíveis</p>
         </div>
       </article>
       <article class="card plan rv">
@@ -1040,10 +1049,11 @@ footer img{height:46px;width:auto}
           </div>
           <div class="valor">
             <small>💼 Valor do Serviço de Marketing</small>
-            <div class="price">R$ 597<span>/mês</span></div>
+            <div class="price"><span class="oldw"><span class="de">De</span><s class="old">R$ 897</s></span>R$ 597<span>/mês</span><em class="promo">Promoção</em></div>
             <p class="pay">➡️ Facilidade de pagamento: <b>2x de R$ 298,50</b> (a cada 15 dias)</p>
           </div>
           <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+          <p class="vagas"><i></i>1 vaga disponível</p>
         </div>
       </article>
       <article class="card plan best rv">
@@ -1065,10 +1075,11 @@ footer img{height:46px;width:auto}
           </div>
           <div class="valor">
             <small>💼 Valor do Serviço de Marketing</small>
-            <div class="price">R$ 797<span>/mês</span></div>
+            <div class="price"><span class="oldw"><span class="de">De</span><s class="old">R$ 997</s></span>R$ 797<span>/mês</span><em class="promo">Promoção</em></div>
             <p class="pay">➡️ Facilidade de pagamento: <b>2x de R$ 398,50</b> (a cada 15 dias)</p>
           </div>
           <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+          <p class="vagas"><i></i>1 vaga disponível</p>
         </div>
       </article>
     </div>
