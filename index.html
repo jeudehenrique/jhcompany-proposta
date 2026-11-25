@@ -634,7 +634,11 @@ footer img{height:46px;width:auto}
 #planos .plan li.bonus-li{font-size:13.5px;font-style:italic;color:var(--muted);margin-top:2px}
 #planos .plan li.bonus-li svg{color:var(--blue-light);width:16px;height:16px;margin-top:3px}
 #planos .plan.best li.bonus-li{color:rgba(255,255,255,.6)}
-#planos .plan.best li.bonus-li svg{color:var(--blue-light)}</style>
+#planos .plan.best li.bonus-li svg{color:var(--blue-light)}
+
+/* ---------- logo na área final, um pouco mais perto do texto ---------- */
+#contato .jh{margin-bottom:10px}
+</style>
 <meta name="description" content="Gestão de tráfego pago para negócios locais: o caminho, os planos e os resultados da JH Company.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="JH Company">
@@ -1051,7 +1055,7 @@ footer img{height:46px;width:auto}
             <div class="price"><span class="oldw"><span class="de">De</span><s class="old">R$ 697</s></span>R$ 497<span>/mês</span><em class="promo">Promoção</em></div>
             <p class="pay">➡️ Facilidade de pagamento: <b>2x de R$ 248,50</b> (a cada 15 dias)</p>
           </div>
-          <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+          <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar o plano Meta Ads de R$ 497/mês."><svg data-i="wa"></svg>Quero fechar o plano Meta Ads</a>
           <p class="vagas"><i></i>2 vagas disponíveis</p>
         </div>
       </article>
@@ -1077,7 +1081,7 @@ footer img{height:46px;width:auto}
             <div class="price"><span class="oldw"><span class="de">De</span><s class="old">R$ 897</s></span>R$ 597<span>/mês</span><em class="promo">Promoção</em></div>
             <p class="pay">➡️ Facilidade de pagamento: <b>2x de R$ 298,50</b> (a cada 15 dias)</p>
           </div>
-          <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+          <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar o plano Google Ads de R$ 597/mês."><svg data-i="wa"></svg>Quero fechar o plano Google Ads</a>
           <p class="vagas"><i></i>1 vaga disponível</p>
         </div>
       </article>
@@ -1104,7 +1108,7 @@ footer img{height:46px;width:auto}
             <div class="price"><span class="oldw"><span class="de">De</span><s class="old">R$ 997</s></span>R$ 797<span>/mês</span><em class="promo">Promoção</em></div>
             <p class="pay">➡️ Facilidade de pagamento: <b>2x de R$ 398,50</b> (a cada 15 dias)</p>
           </div>
-          <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Clique para iniciar</a>
+          <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar o plano completo, Meta Ads e Google Ads, de R$ 797/mês."><svg data-i="wa"></svg>Quero fechar o plano completo</a>
           <p class="vagas"><i></i>1 vaga disponível</p>
         </div>
       </article>
@@ -1144,14 +1148,10 @@ footer img{height:46px;width:auto}
     </div>
     <div class="card box rv">
       <div>
-        <div class="jh"><img src="img/jh-circulo.png" alt="Logo JH"></div>
+        <div class="jh"><img src="img/logo-jh-nova.jpg" alt="JH Company"></div>
         <h3>Eu tenho resultado para o seu negócio. <span class="hl">Vamos começar?</span></h3>
         <p class="s">Escolha o seu primeiro passo e fale comigo agora no WhatsApp.</p>
-        <a class="btn wa" href="#" target="_blank" rel="noopener"><svg data-i="wa"></svg>Quero fechar a parceria</a>
-      </div>
-      <div class="info">
-        <a class="wa" href="#" target="_blank" rel="noopener"><div class="ico green"><svg data-i="msg"></svg></div><div><small>WhatsApp:</small><span>Clique para iniciar</span></div></a>
-        <a href="mailto:jeudehenrique10@gmail.com"><div class="ico green"><svg data-i="mail"></svg></div><div><small>E-mail:</small><span>jeudehenrique10@gmail.com</span></div></a>
+        <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar a parceria com a JH Company."><svg data-i="wa"></svg>Quero fechar a parceria</a>
       </div>
     </div>
   </div>
@@ -1166,7 +1166,7 @@ footer img{height:46px;width:auto}
 <script>
 // WhatsApp: mesmo número do site agenciajhcompany.com — troque aqui se precisar
 var WHATSAPP = 'https://api.whatsapp.com/send?phone=5521968133292&text=' + encodeURIComponent('Olá, vi a proposta comercial e gostaria de mais informações.');
-document.querySelectorAll('a.wa').forEach(function(a){a.href=WHATSAPP});
+document.querySelectorAll('a.wa').forEach(function(a){a.href=a.dataset.msg?('https://api.whatsapp.com/send?phone=5521968133292&text='+encodeURIComponent(a.dataset.msg)):WHATSAPP});
 
 // Ícones (estilo Lucide)
 var P={
