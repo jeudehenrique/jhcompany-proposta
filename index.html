@@ -171,7 +171,7 @@ section{position:relative;padding:80px 0;overflow:hidden}
 .plan .oldw s::after{content:"";position:absolute;left:-4px;right:-4px;top:50%;height:2px;background:#ff5a4e;transform:rotate(-8deg)}
 .plan .pay{font-size:14px;color:rgba(255,255,255,.8);margin-top:10px}
 .plan .pay b{color:#fff}
-.plan .promo{font-style:normal;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:#ff5a4e;padding:4px 9px;border-radius:99px;margin-left:4px;align-self:center}
+.plan .promo{font-style:normal;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--grad);box-shadow:0 6px 16px -8px rgba(0,171,245,.7);padding:4px 9px;border-radius:99px;margin-left:4px;align-self:center}
 .plan .inc{margin-top:20px;font-size:13.5px;font-weight:700;color:var(--blue-l);text-transform:uppercase;letter-spacing:.6px}
 .plan ul{margin-top:12px;display:grid;gap:10px}
 .plan li{display:flex;gap:10px;font-size:15px;color:rgba(255,255,255,.9);line-height:1.45}
@@ -237,19 +237,38 @@ section{position:relative;padding:80px 0;overflow:hidden}
 .sol-foot{margin-top:auto;padding-top:22px}
 .sol-sub{font-size:13.5px;font-weight:700;color:var(--blue-l);text-transform:uppercase;letter-spacing:.6px;margin-top:18px}
 .sol .sol-sub + ul{margin-top:10px}
-.sol-bonus{min-height:216px;padding:14px 16px;border-radius:12px;border:1px solid rgba(0,171,245,.3);background:rgba(0,171,245,.06);font-size:14px;color:rgba(255,255,255,.9);line-height:1.5}
+.sol-grid .sol > ul{min-height:236px}
+.sol-grid .sol .pay{min-height:90px}
+.sol-grid .sol-top{min-height:56px}
+.sol-grid .sol-desc{min-height:70px}
+.sol-bonus{min-height:395px;padding:14px 16px;border-radius:12px;border:1px solid rgba(0,171,245,.3);background:rgba(0,171,245,.06);font-size:14px;color:rgba(255,255,255,.9);line-height:1.5}
 .sol-bonus .bonus-tit{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--grad);padding:5px 10px;border-radius:99px}
 .sol-bonus .bonus-tit svg{width:14px;height:14px}
 .sol-bonus p{margin-top:8px}
 .sol-bonus em{display:block;font-style:normal;color:var(--blue-l);font-weight:600;font-size:13px}
 .sol-bonus b{color:#fff}
-.stack{min-height:82px;margin-top:14px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.04);border:1px dashed rgba(0,171,245,.4)}
+.bonus-blk{margin-top:12px}
+.bonus-blk > b{display:block;font-family:'Poppins',sans-serif;font-size:14px;color:#fff;font-weight:600}
+.val{list-style:none;margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1);display:grid;gap:8px}
+.val li{display:flex;justify-content:space-between;gap:10px;font-size:14px;color:rgba(255,255,255,.8)}
+.val li b{color:#fff;font-family:'Poppins',sans-serif;font-weight:600}
+.val s{color:rgba(255,255,255,.5);text-decoration:line-through;text-decoration-color:rgba(255,255,255,.6);font-weight:500}
+.val li.tot{margin-top:4px;padding-top:8px;border-top:1px dashed rgba(0,171,245,.4);font-size:15px;color:#fff;font-weight:600}
+.val li.tot b{color:var(--blue-l);font-size:16px}
+.val-tit{margin-top:16px;font-size:13px;color:rgba(255,255,255,.7);font-weight:600}
+.val-tit + .val{margin-top:8px}
+.sol-price{margin-top:16px}
+.bonus-list{margin-top:8px;display:grid;gap:7px}
+.bonus-list li{display:flex;gap:8px;font-size:13.5px;color:rgba(255,255,255,.9);line-height:1.45}
+.bonus-list li svg{width:16px;height:16px;color:var(--blue-l);flex:none;margin-top:2px}
+.bonus-list em{display:inline;font-size:13px}
+.stack{min-height:98px;margin-top:14px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.04);border:1px dashed rgba(0,171,245,.4)}
 .stack b{color:var(--blue-l);font-weight:700}
 .sol-price{display:flex;align-items:flex-end;flex-wrap:wrap;gap:4px 8px;margin-top:18px;font-family:'Poppins',sans-serif}
-.sol-price s{width:100%;font-family:'Inter',sans-serif;font-size:14px;color:rgba(255,255,255,.6);text-decoration:line-through;text-decoration-color:#ff5a4e}
+.sol-price s{width:100%;font-family:'Inter',sans-serif;font-size:14px;color:rgba(255,255,255,.6);text-decoration:line-through;text-decoration-color:rgba(255,255,255,.5)}
 .sol-price b{font-size:40px;font-weight:700;line-height:1;letter-spacing:-.02em}
 .sol-price .per{font-size:16px;font-weight:500;color:rgba(255,255,255,.7);padding-bottom:4px}
-.promo{font-style:normal;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:#ff5a4e;padding:4px 9px;border-radius:99px;margin-left:4px;align-self:center;font-family:'Inter',sans-serif}
+.promo{font-style:normal;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--grad);box-shadow:0 6px 16px -8px rgba(0,171,245,.7);padding:4px 9px;border-radius:99px;margin-left:4px;align-self:center;font-family:'Inter',sans-serif}
 .sol .pay{font-size:14px;color:rgba(255,255,255,.8);margin-top:8px;min-height:46px}
 .sol .pay b{font-size:14px;color:#fff;font-family:'Inter',sans-serif;letter-spacing:0;font-weight:700}
 .sol .vagas{margin-top:10px;font-size:13.5px;font-weight:700;color:#ff5a4e}
@@ -285,6 +304,10 @@ section{position:relative;padding:80px 0;overflow:hidden}
 .plan .bonus p{position:relative;padding-left:28px;font-size:14px;color:rgba(255,255,255,.9);margin-top:10px;line-height:1.45}
 .plan .bonus p svg{position:absolute;left:0;top:2px;width:18px;height:18px;color:var(--blue-l)}
 .plan .bonus em{display:block;font-style:normal;color:var(--blue-l);font-weight:600;margin-top:2px}
+
+/* ---------- condições da parceria ---------- */
+.cond{grid-template-columns:1fr 1fr}
+.cond-note{text-align:center;max-width:760px;margin:22px auto 0;font-size:14px;color:rgba(255,255,255,.7)}
 
 /* ---------- chamadas para fechamento ---------- */
 .cta-row{margin-top:44px;text-align:center}
@@ -380,10 +403,10 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
       <h2 class="h2">O que vamos fazer <span class="hl">juntos</span></h2>
       <p class="lead">Do primeiro anúncio ao crescimento da sua empresa. Cada etapa prepara a próxima.</p>
     </div>
-    <p class="objetivo rv"><b>Nosso objetivo:</b> fazer a sua empresa ser encontrada, escolhida e contatada, com clientes chegando direto no seu WhatsApp.</p>
+    <p class="objetivo rv"><b>Nosso objetivo:</b> posicionar a sua empresa bem nas redes, com anúncios que vendem, redes fortalecidas e um site que converte. Assim, ela cresce e escala.</p>
     <div class="steps rv">
       <div class="step glass"><div class="n">1</div><h3>Anúncios e redes sociais</h3><p>Anúncios no Facebook e no Instagram trazem clientes e deixam suas redes com aparência profissional.</p></div>
-      <div class="step glass"><div class="n">2</div><h3>Site que atrai e convence</h3><p>Grátis a partir de 3 meses de parceria. Os anúncios levam as pessoas até ele.</p></div>
+      <div class="step glass"><div class="n">2</div><h3>Site que converte e vende</h3><p>Não só atrai: leva o visitante a chamar no WhatsApp. Grátis a partir de 3 meses de parceria.</p></div>
       <div class="step glass"><div class="n">3</div><h3>Google Ads e Meu Negócio</h3><p>Anúncios para quem pesquisa no Google e ficha no Google Meu Negócio para aparecer no Maps.</p></div>
       <div class="step res"><div class="n"><svg data-i="trend" style="width:22px;height:22px"></svg></div><h3>Resultado</h3><p>Clientes chegando no seu WhatsApp, prontos para serem atendidos.</p></div>
     </div>
@@ -481,9 +504,8 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
 <section id="planos" class="dark">
   <div class="container">
     <div class="head rv">
-      <span class="kicker">Soluções integradas</span>
       <h2 class="h2">Qual solução sua empresa <span class="hl">precisa neste momento?</span></h2>
-      <p class="lead">Contrato mínimo de 3 meses. Escolha o plano e feche a parceria.</p>
+      <p class="lead">Para começar, o melhor plano é o Meta Ads: você tem a gestão dos anúncios, o social media e o site por R$ 497 por mês. O ideal é fechar ao menos 3 meses.</p>
     </div>
 
     <div class="sol-grid">
@@ -491,26 +513,42 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
       <article class="sol glass rv">
         <div class="sol-top">
           <div class="sol-ico"><svg data-i="megaphone"></svg></div>
-          <h3>Tráfego Pago Meta Ads + Social Media</h3>
+          <h3>Tráfego Pago Meta Ads</h3>
         </div>
         <p class="sol-desc">Anúncios no Facebook e no Instagram que trazem clientes para o seu WhatsApp.</p>
-        <p class="sol-sub">Você contrata a gestão dos anúncios:</p>
+        <p class="sol-sub">Gestão de anúncios</p>
         <ul>
-          <li><svg data-i="check"></svg><span>Criação dos anúncios no Meta Ads, pensados para trazer clientes e vendas</span></li>
+          <li><svg data-i="check"></svg><span>Criação dos anúncios, pensados para trazer clientes</span></li>
           <li><svg data-i="check"></svg><span>Acompanhamento diário, usando os dados para melhorar os anúncios</span></li>
-          <li><svg data-i="check"></svg><span>Organização do Instagram e do Facebook, para o cliente confiar ao clicar no anúncio</span></li>
-          <li><svg data-i="check"></svg><span>Edição de fotos e vídeos dos serviços realizados</span></li>
-          <li><svg data-i="check"></svg><span>Relatórios semanais e suporte para dúvidas e ajustes</span></li>
+          <li><svg data-i="check"></svg><span>Otimização constante, sempre que necessário</span></li>
+          <li><svg data-i="check"></svg><span>Relatórios semanais com os resultados</span></li>
+          <li><svg data-i="check"></svg><span>Suporte para dúvidas e informações importantes</span></li>
         </ul>
         <div class="sol-foot">
           <div class="sol-bonus">
             <span class="bonus-tit"><svg data-i="gift"></svg>Bônus incluso</span>
-            <p><b>Social media:</b> cerca de 2 postagens por semana no Facebook e no Instagram <em>(valor R$ 497)</em></p>
-            <p><b>Site profissional</b> grátis para quem fechar a partir de 3 meses <em>(valor R$ 597)</em></p>
+            <div class="bonus-blk"><b>Social media</b>
+              <ul class="bonus-list">
+                <li><svg data-i="check"></svg><span>Organização do perfil no Instagram e no Facebook</span></li>
+                <li><svg data-i="check"></svg><span>Postagens semanais</span></li>
+                <li><svg data-i="check"></svg><span>Edição de fotos e vídeos dos seus serviços</span></li>
+              </ul>
+            </div>
+            <div class="bonus-blk"><b>Site profissional grátis</b>
+              <ul class="bonus-list">
+                <li><svg data-i="check"></svg><span>Site personalizado para o seu negócio</span></li>
+                <li><svg data-i="check"></svg><span>Domínio por 1 ano incluso</span></li>
+                <li><svg data-i="check"></svg><span>Integração com WhatsApp e SEO para o Google</span></li>
+              </ul>
+            </div>
           </div>
-          <div class="sol-price"><s>De R$ 667</s><b>R$ 497</b><span class="per">/mês</span><em class="promo">Promoção</em></div>
-          <p class="stack">Gestão de anúncios R$ 497 + Social media R$ 497 + Site R$ 597 = <b>tudo isso por R$ 497/mês</b></p>
-          <p class="pay">Pode pagar em <b>2x de R$ 248,50</b>, a cada 15 dias, durante o contrato</p>
+          <div class="sol-price"><b>R$ 497</b><span class="per">/mês</span><em class="promo">Promoção</em></div>
+          <p class="val-tit">Se contratasse separado, sairia:</p><ul class="val">
+            <li><span>Gestão de anúncios</span><b><s>R$ 667</s></b></li>
+            <li><span>Social media</span><b><s>R$ 497</s></b></li>
+            <li><span>Site profissional</span><b><s>R$ 597</s></b></li>
+          <li class="tot"><span>Tudo isso por</span><b>R$ 497/mês</b></li></ul>
+          <p class="pay">Você paga o valor mensal. Se preferir, pode dividir em <b>2x de R$ 248,50</b> ao mês</p>
           <p class="vagas"><i></i>2 vagas disponíveis</p>
           <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar o plano Meta Ads de R$ 497/mês."><svg data-i="wa"></svg>Quero este plano</a>
         </div>
@@ -523,21 +561,39 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
           <h3>Tráfego Pago Google Ads + Google Meu Negócio</h3>
         </div>
         <p class="sol-desc">Anúncios para quem já procura o seu serviço no Google, e a sua empresa no Maps da região.</p>
-        <p class="sol-sub">Você contrata a gestão dos anúncios:</p>
+        <p class="sol-sub">Gestão de anúncios</p>
         <ul>
-          <li><svg data-i="check"></svg><span>Criação dos anúncios no Google Ads, para aparecer quando alguém procura o seu serviço</span></li>
+          <li><svg data-i="check"></svg><span>Criação dos anúncios, para aparecer quando alguém procura o seu serviço</span></li>
           <li><svg data-i="check"></svg><span>Acompanhamento diário, usando os dados para melhorar os anúncios</span></li>
-          <li><svg data-i="check"></svg><span>Criação ou atualização do Google Meu Negócio, para aparecer no Maps</span></li>
-          <li><svg data-i="check"></svg><span>Relatórios semanais e suporte para dúvidas e ajustes</span></li>
+          <li><svg data-i="check"></svg><span>Otimização constante, sempre que necessário</span></li>
+          <li><svg data-i="check"></svg><span>Relatórios semanais com os resultados</span></li>
+          <li><svg data-i="check"></svg><span>Suporte para dúvidas e informações importantes</span></li>
         </ul>
         <div class="sol-foot">
           <div class="sol-bonus">
             <span class="bonus-tit"><svg data-i="gift"></svg>Bônus incluso</span>
-            <p><b>Site profissional</b> grátis para quem fechar a partir de 3 meses <em>(valor R$ 597)</em></p>
+            <div class="bonus-blk"><b>Perfil no Google Meu Negócio</b>
+              <ul class="bonus-list">
+                <li><svg data-i="check"></svg><span>Perfil criado e configurado</span></li>
+                <li><svg data-i="check"></svg><span>Informações comerciais, fotos e serviços organizados</span></li>
+                <li><svg data-i="check"></svg><span>Links de contato e estratégia para avaliações</span></li>
+              </ul>
+            </div>
+            <div class="bonus-blk"><b>Site profissional grátis</b>
+              <ul class="bonus-list">
+                <li><svg data-i="check"></svg><span>Site personalizado para o seu negócio</span></li>
+                <li><svg data-i="check"></svg><span>Domínio por 1 ano incluso</span></li>
+                <li><svg data-i="check"></svg><span>Integração com WhatsApp e SEO para o Google</span></li>
+              </ul>
+            </div>
           </div>
-          <div class="sol-price"><s>De R$ 797</s><b>R$ 597</b><span class="per">/mês</span><em class="promo">Promoção</em></div>
-          <p class="stack">Gestão de anúncios R$ 597 + Site R$ 597 = <b>tudo isso por R$ 597/mês</b></p>
-          <p class="pay">Pode pagar em <b>2x de R$ 298,50</b>, a cada 15 dias, durante o contrato</p>
+          <div class="sol-price"><b>R$ 597</b><span class="per">/mês</span><em class="promo">Promoção</em></div>
+          <p class="val-tit">Se contratasse separado, sairia:</p><ul class="val">
+            <li><span>Gestão de anúncios</span><b><s>R$ 797</s></b></li>
+            <li><span>Perfil no Google Meu Negócio</span><b><s>R$ 397</s></b></li>
+            <li><span>Site profissional</span><b><s>R$ 597</s></b></li>
+          <li class="tot"><span>Tudo isso por</span><b>R$ 597/mês</b></li></ul>
+          <p class="pay">Você paga o valor mensal. Se preferir, pode dividir em <b>2x de R$ 298,50</b> ao mês</p>
           <p class="vagas"><i></i>1 vaga disponível</p>
           <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar o plano Google Ads de R$ 597/mês."><svg data-i="wa"></svg>Quero este plano</a>
         </div>
@@ -551,25 +607,41 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
           <h3>Presença Digital 360°: Meta Ads + Google Ads</h3>
         </div>
         <p class="sol-desc">Anúncios no Facebook, no Instagram e no Google em um só plano.</p>
-        <p class="sol-sub">Você contrata a gestão dos anúncios:</p>
+        <p class="sol-sub">Gestão de anúncios</p>
         <ul>
-          <li><svg data-i="check"></svg><span>Criação dos anúncios no Meta Ads e no Google Ads, pensados para trazer clientes e vendas</span></li>
-          <li><svg data-i="check"></svg><span>Acompanhamento diário das duas plataformas, usando os dados para melhorar os anúncios</span></li>
-          <li><svg data-i="check"></svg><span>Criação ou atualização do Google Meu Negócio, para aparecer no Maps</span></li>
-          <li><svg data-i="check"></svg><span>Organização dos perfis e edição de fotos e vídeos dos serviços</span></li>
-          <li><svg data-i="check"></svg><span>Relatórios semanais e suporte para dúvidas e ajustes</span></li>
+          <li><svg data-i="check"></svg><span>Criação dos anúncios no Meta Ads e no Google Ads</span></li>
+          <li><svg data-i="check"></svg><span>Acompanhamento diário das duas plataformas</span></li>
+          <li><svg data-i="check"></svg><span>Otimização constante, sempre que necessário</span></li>
+          <li><svg data-i="check"></svg><span>Relatórios semanais com os resultados</span></li>
+          <li><svg data-i="check"></svg><span>Suporte para dúvidas e informações importantes</span></li>
         </ul>
         <div class="sol-foot">
           <div class="sol-bonus">
             <span class="bonus-tit"><svg data-i="gift"></svg>Bônus incluso</span>
-            <p><b>Social media:</b> cerca de 2 postagens por semana no Facebook e no Instagram <em>(valor R$ 497)</em></p>
-            <p><b>Site profissional</b> grátis para quem fechar a partir de 3 meses <em>(valor R$ 597)</em></p>
+            <div class="bonus-blk"><b>Social media</b>
+              <ul class="bonus-list">
+                <li><svg data-i="check"></svg><span>Organização do perfil no Instagram e no Facebook</span></li>
+                <li><svg data-i="check"></svg><span>Postagens semanais</span></li>
+                <li><svg data-i="check"></svg><span>Edição de fotos e vídeos dos seus serviços</span></li>
+              </ul>
+            </div>
+            <div class="bonus-blk"><b>Perfil no Google Meu Negócio e site grátis</b>
+              <ul class="bonus-list">
+                <li><svg data-i="check"></svg><span>Perfil criado e configurado</span></li>
+                <li><svg data-i="check"></svg><span>Site personalizado com domínio por 1 ano</span></li>
+              </ul>
+            </div>
           </div>
-          <div class="sol-price"><s>De R$ 1.197</s><b>R$ 897</b><span class="per">/mês</span><em class="promo">Promoção</em></div>
-          <p class="stack">Gestão de anúncios R$ 897 + Social media R$ 497 + Site R$ 597 = <b>tudo isso por R$ 897/mês</b></p>
-          <p class="pay">Pode pagar em <b>2x de R$ 448,50</b>, a cada 15 dias, durante o contrato</p>
+          <div class="sol-price"><b>R$ 897</b><span class="per">/mês</span><em class="promo">Promoção</em></div>
+          <p class="val-tit">Se contratasse separado, sairia:</p><ul class="val">
+            <li><span>Gestão de anúncios</span><b><s>R$ 1.197</s></b></li>
+            <li><span>Social media</span><b><s>R$ 497</s></b></li>
+            <li><span>Perfil no Google Meu Negócio</span><b><s>R$ 397</s></b></li>
+            <li><span>Site profissional</span><b><s>R$ 597</s></b></li>
+          <li class="tot"><span>Tudo isso por</span><b>R$ 897/mês</b></li></ul>
+          <p class="pay">Você paga o valor mensal. Se preferir, pode dividir em <b>2x de R$ 448,50</b> ao mês</p>
           <p class="vagas"><i></i>1 vaga disponível</p>
-          <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar o plano Presença Digital 360°, Meta Ads e Google Ads, de R$ 897/mês."><svg data-i="wa"></svg>Quero a Presença Digital 360°</a>
+          <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar a Presença Digital 360°, de R$ 897/mês."><svg data-i="wa"></svg>Quero este plano</a>
         </div>
       </article>
     </div>
@@ -598,28 +670,8 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
         <div class="ind-foot">
           <span class="tagl">Oferta de lançamento</span>
           <div class="ind-price"><b>R$ 397</b><span class="pre">pagamento pelo projeto completo</span></div>
-          <p class="ind-note">Condição especial para os primeiros clientes da agência.</p>
+          <p class="ind-note">Condição especial para os clientes.</p>
           <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero contratar o Google Meu Negócio."><svg data-i="wa"></svg>Contratar</a>
-        </div>
-      </article>
-      <article class="sol glass ind rv">
-        <div class="sol-top">
-          <div class="sol-ico"><svg data-i="globe"></svg></div>
-          <h3>Site Institucional Profissional</h3>
-        </div>
-        <p class="sol-desc">Site personalizado para apresentar a sua empresa e receber contatos de novos clientes.</p>
-        <ul class="ind-list">
-          <li><svg data-i="check"></svg><span>Site personalizado</span></li>
-          <li><svg data-i="check"></svg><span>Domínio por 1 ano incluso</span></li>
-          <li><svg data-i="check"></svg><span>Integração com WhatsApp</span></li>
-          <li><svg data-i="check"></svg><span>Configuração básica para o Google</span></li>
-          <li><svg data-i="check"></svg><span>Publicação do site</span></li>
-          <li><svg data-i="check"></svg><span>30 dias de acompanhamento</span></li>
-        </ul>
-        <div class="ind-foot">
-          <span class="tagl">Preço de lançamento</span>
-          <div class="ind-price"><b>R$ 597</b></div>
-          <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero contratar a criação de site."><svg data-i="wa"></svg>Contratar</a>
         </div>
       </article>
       <article class="sol glass ind rv">
@@ -629,30 +681,47 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
         </div>
         <p class="sol-desc">8 publicações por mês (2 por semana) para manter as suas redes ativas e profissionais.</p>
         <ul class="ind-list">
-          <li><svg data-i="check"></svg><span>Criação de artes para feed</span></li>
-          <li><svg data-i="check"></svg><span>Carrosséis de até 5 imagens</span></li>
-          <li><svg data-i="check"></svg><span>Edição de fotos enviadas pelo cliente</span></li>
-          <li><svg data-i="check"></svg><span>Edição de vídeos para Reels</span></li>
-          <li><svg data-i="check"></svg><span>Criação de legendas</span></li>
-          <li><svg data-i="check"></svg><span>Planejamento básico de conteúdo</span></li>
-          <li><svg data-i="check"></svg><span>Agendamento e publicação</span></li>
+          <li><svg data-i="check"></svg><span>Organização do Instagram e do Facebook</span></li>
+          <li><svg data-i="check"></svg><span>Artes para feed e carrosséis de até 5 imagens</span></li>
+          <li><svg data-i="check"></svg><span>Edição de fotos e vídeos dos seus serviços</span></li>
+          <li><svg data-i="check"></svg><span>Vídeos para Reels e legendas</span></li>
+          <li><svg data-i="check"></svg><span>Planejamento, agendamento e publicação</span></li>
         </ul>
         <div class="ind-foot">
           <span class="tagl">Oferta de lançamento</span>
           <div class="ind-price"><b>R$ 497</b><span class="per">/mês</span></div>
+          <p class="ind-note">Condição especial para os clientes.</p>
           <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero contratar o social media."><svg data-i="wa"></svg>Contratar</a>
+        </div>
+      </article>
+      <article class="sol glass ind rv">
+        <div class="sol-top">
+          <div class="sol-ico"><svg data-i="globe"></svg></div>
+          <h3>Site Institucional Profissional</h3>
+        </div>
+        <p class="sol-desc">Site personalizado para apresentar a sua empresa e receber contatos de novos clientes.</p>
+        <ul class="ind-list">
+          <li><svg data-i="check"></svg><span>Site personalizado para o seu negócio</span></li>
+          <li><svg data-i="check"></svg><span>Domínio por 1 ano incluso</span></li>
+          <li><svg data-i="check"></svg><span>Integração com WhatsApp</span></li>
+          <li><svg data-i="check"></svg><span>Configuração de SEO para o Google</span></li>
+          <li><svg data-i="check"></svg><span>30 dias de acompanhamento</span></li>
+        </ul>
+        <div class="ind-foot">
+          <span class="tagl">Preço de lançamento</span>
+          <div class="ind-price"><b>R$ 597</b></div>
+          <p class="ind-note">Condição especial para os clientes.</p>
+          <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero contratar a criação de site."><svg data-i="wa"></svg>Contratar</a>
         </div>
       </article>
     </div>
 
     <div class="cond">
-      <div class="glass rv"><div class="ico"><svg data-i="file"></svg></div><h4>Contrato</h4><p>Mínimo de 3 meses. Obrigatório, garante segurança para as duas partes.</p></div>
-      <div class="glass rv"><div class="ico"><svg data-i="card"></svg></div><h4>Pagamento</h4><p>Mensal, em 2x a cada 15 dias.</p></div>
-      <div class="glass rv"><div class="ico"><svg data-i="target"></svg></div><h4>Verba de anúncios</h4><p>Paga direto na plataforma, pode ser dividida em depósitos semanais.</p></div>
-      <div class="glass rv"><div class="ico"><svg data-i="trend"></svg></div><h4>Objetivo</h4><p>Atrair clientes, fortalecer a presença digital e gerar oportunidades de venda.</p></div>
+      <div class="glass rv"><div class="ico"><svg data-i="file"></svg></div><h4>Tempo de parceria</h4><p>Sugerimos ao menos 3 meses de trabalho, para mostrar resultados melhores.</p></div>
+      <div class="glass rv"><div class="ico"><svg data-i="trend"></svg></div><h4>Objetivo</h4><p>Posicionar a sua empresa nas redes, atrair clientes e fortalecer as vendas.</p></div>
     </div>
-  </div>
-</section>
+    <p class="cond-note rv">O valor investido na plataforma de anúncios é definido por cada empresa e pago direto na plataforma. Não é cobrado pela JH Company.</p>
+  </div></section>
 
 <!-- 8 · TRANSPARÊNCIA (clara) -->
 <section id="transparencia" class="light">
@@ -684,14 +753,6 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
         <p>Pense assim: quanto você pagaria para aparecer para pessoas interessadas em comprar o seu serviço? Se cada contato custar pouco e parte deles virar cliente, o investimento se paga.</p>
         <p>Por isso acompanhamos o custo de cada conversa e ajustamos a campanha para que ela continue valendo a pena.</p>
       </details>
-      <details class="glass"><summary>O que é marketing digital e como ele ajuda a minha empresa?</summary>
-        <p>É usar as redes sociais e o Google para divulgar o seu serviço. Para negócio local, usamos o Facebook, o Instagram e o Google Meu Negócio.</p>
-        <p>Quem chega ao seu perfil precisa encontrar uma empresa em que confia. O trabalho da JH Company é fazer isso acontecer, para que quem encontra você se torne cliente.</p>
-      </details>
-      <details class="glass"><summary>Meta Ads ou Google Ads: qual escolher?</summary>
-        <p>Se você tem pouco capital, recomendamos começar pelo Meta Ads, que já inclui social media nos planos.</p>
-        <p>Depois de 3 meses de parceria, entregamos o seu site. Com ele pronto, a JH Company prepara a estrutura para o Google e deixa a sua empresa posicionada nas principais redes.</p>
-      </details>
       <details class="glass"><summary>Quanto preciso investir em anúncios?</summary>
         <p>Não existe um valor igual para todas as empresas, porque cada uma tem um capital e um cenário diferentes. Para começar, o ideal é ter ao menos R$ 500 por mês em cada plataforma.</p>
         <p>Para quem já investe valores maiores, a gente ajusta a estratégia ao seu orçamento.</p>
@@ -700,13 +761,21 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
         <p>São duas coisas separadas. O valor do nosso serviço é pago diretamente para a JH Company, na forma combinada entre as partes. A verba dos anúncios é o valor investido na plataforma, e ela é paga direto na Meta ou no Google. A JH Company não tem acesso a esse dinheiro.</p>
         <p>Você escolhe como abastecer: sozinho, mensal, quinzenal ou semanalmente. Se preferir, a gente gera o link ou o QR Code de pagamento para você, ou você nos envia o valor e nós depositamos na plataforma. O que não pode é faltar saldo, porque os anúncios param.</p>
       </details>
-      <details class="glass"><summary>Vou conseguir ter resultado e vender?</summary>
-        <p>Em todos os negócios locais que atendemos, entregamos resultado já no primeiro mês. Na primeira semana a gente ainda está configurando e testando, mas muitas vezes o resultado começa nela.</p>
-        <p>Recomendamos pelo menos 3 meses, para ter dados suficientes e melhorar a estrutura. Com anúncios bem feitos e redes bem cuidadas, o resultado é muito provável, embora varie de empresa para empresa.</p>
+      <details class="glass"><summary>Meta Ads ou Google Ads: qual escolher?</summary>
+        <p>Se você tem pouco capital, recomendamos começar pelo Meta Ads, que já inclui social media nos planos.</p>
+        <p>Depois de 3 meses de parceria, entregamos o seu site. Com ele pronto, a JH Company prepara a estrutura para o Google e deixa a sua empresa posicionada nas principais redes.</p>
+      </details>
+      <details class="glass"><summary>O que é marketing digital e como ele ajuda a minha empresa?</summary>
+        <p>É usar as redes sociais e o Google para divulgar o seu serviço. Para negócio local, usamos o Facebook, o Instagram e o Google Meu Negócio.</p>
+        <p>Quem chega ao seu perfil precisa encontrar uma empresa em que confia. O trabalho da JH Company é fazer isso acontecer, para que quem encontra você se torne cliente.</p>
       </details>
       <details class="glass"><summary>Em quanto tempo vejo os primeiros resultados?</summary>
         <p>Varia de empresa para empresa. Cada negócio tem uma estrutura, um investimento e uma região diferentes, e a região influencia muito, principalmente em nichos como climatização, lavagem e higienização de estofados.</p>
         <p>Na maioria dos casos, na primeira semana você já começa a receber orçamentos, e em alguns já fecha vendas. Outros fechamentos aparecem ao longo dos dias, por isso não é possível garantir o dia exato. Por isso sugerimos uma média de 3 meses.</p>
+      </details>
+      <details class="glass"><summary>Vou conseguir ter resultado e vender?</summary>
+        <p>Em todos os negócios locais que atendemos, entregamos resultado já no primeiro mês. Na primeira semana a gente ainda está configurando e testando, mas muitas vezes o resultado começa nela.</p>
+        <p>Recomendamos pelo menos 3 meses, para ter dados suficientes e melhorar a estrutura. Com anúncios bem feitos e redes bem cuidadas, o resultado é muito provável, embora varie de empresa para empresa.</p>
       </details>
       <details class="glass"><summary>Quanto tempo leva para tudo ficar pronto?</summary>
         <p>Do nosso lado, a estrutura costuma ficar pronta em até 24 horas, e no máximo em 3 dias.</p>
