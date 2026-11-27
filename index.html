@@ -108,10 +108,10 @@ section{position:relative;padding:80px 0;overflow:hidden}
 .step.res .n{background:rgba(255,255,255,.18);box-shadow:none}
 
 /* ---------- 4. empresas que confiaram (clara) ---------- */
-.carousel{position:relative;overflow:hidden;cursor:grab;touch-action:pan-y;scrollbar-width:none}
+.carousel{position:relative;overflow-x:auto;overflow-y:hidden;cursor:grab;touch-action:pan-x pan-y;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
 .carousel::-webkit-scrollbar{display:none}
 .carousel .track{display:flex;gap:20px;width:max-content;padding:6px 0 10px}
-.lmq{overflow:hidden;cursor:grab;scrollbar-width:none}
+.lmq{overflow-x:auto;overflow-y:hidden;cursor:grab;touch-action:pan-x pan-y;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
 .lmq::-webkit-scrollbar{display:none}
 .lmq .logos{display:flex;gap:16px;width:max-content;padding:6px 0}
 .logo{flex:none;width:170px;background:transparent;text-align:center}
@@ -278,7 +278,6 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
     <h1 class="rv">Parceria de<span class="hl">Marketing Digital</span></h1>
     <p class="sub rv">Focada em negócios locais</p>
     <p class="desc rv">A JH Company é especialista em atender negócios locais. O nosso foco é posicionar a sua empresa de forma estratégica através dos anúncios para conquistar novos clientes.</p>
-    <a class="btn rv wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta de parceria e quero fechar a parceria com a JH Company."><svg data-i="wa"></svg>Quero fechar a parceria</a>
     <div class="stats rv">
       <div class="stat glass"><b>+7</b><span>Anos de experiência profissional</span></div>
       <div class="stat glass"><b>+23</b><span>Empresas atendidas</span></div>
@@ -301,7 +300,6 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
         <p class="t">Compreendemos que não basta criar anúncios. Sua empresa precisa estar bem posicionada no Google, no Facebook e no Instagram, transmitindo confiança e credibilidade para quem encontra o seu negócio.</p>
         <p class="t">Por isso, nosso trabalho vai além do tráfego pago: unimos anúncios e posicionamento digital em uma estratégia focada em atrair clientes, gerar oportunidades e aumentar as vendas do seu negócio.</p>
         <div class="bar"></div>
-        <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta de parceria e quero fechar a parceria com a JH Company." style="margin-top:28px"><svg data-i="wa"></svg>Quero fechar a parceria</a>
       </div>
     </div>
   </div>
@@ -321,7 +319,6 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
       <div class="step glass"><div class="n">3</div><h3>Google Ads e Meu Negócio</h3><p>Anúncios para quem pesquisa no Google e ficha no Google Meu Negócio para aparecer no Maps.</p></div>
       <div class="step res"><div class="n"><svg data-i="trend" style="width:22px;height:22px"></svg></div><h3>Resultado</h3><p>Clientes chegando no seu WhatsApp, prontos para serem atendidos.</p></div>
     </div>
-    <div class="cta-row rv"><a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta de parceria e quero começar a parceria com a JH Company."><svg data-i="wa"></svg>Quero começar a parceria</a><p class="cta-note">Me chama e eu explico qual plano faz mais sentido para o seu negócio.</p></div>
   </div>
 </section>
 
@@ -373,7 +370,6 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
       </div>
     </div>
     <p class="resnote">Arraste para o lado ou deixe rolar sozinho.</p>
-    <div class="cta-row rv"><a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta de parceria e quero esses resultados também para o meu negócio."><svg data-i="wa"></svg>Quero esses resultados também</a></div>
   </div>
 </section>
 
@@ -411,7 +407,6 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
       <article class="gp lcard"><div class="gim"><img src="img/feedbacks/higienizacao.webp" alt="Conversa com cliente: leads de um dia geraram um fechamento de R$ 300." loading="lazy"></div><div class="gb"><div class="tg"><span class="tagc t-res">Resultado</span><small>Climatização · Higienização</small></div><p>Em um único dia, os leads gerados pela JH Company resultaram em um fechamento de higienização de R$ 300.</p></div></article>
     </div>
   </div>
-  <div class="cta-row rv"><a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta de parceria e quero fechar a parceria com a JH Company."><svg data-i="wa"></svg>Quero fechar a parceria</a></div>
 </section>
 
 <!-- 7 · PLANOS (escura) -->
@@ -439,8 +434,6 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
           <li class="bonus-li"><svg data-i="globe"></svg><span>Site grátis em parcerias a partir de 3 meses, válido durante toda a parceria</span></li>
         </ul>
         <div class="verba"><b>Verba recomendada:</b> mínimo de R$ 500/mês em anúncios. Pode ser dividida em depósitos semanais.</div>
-        <div class="vagas"><i></i>2 vagas disponíveis</div>
-        <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar o plano Meta Ads de R$ 497/mês." style="margin-top:14px"><svg data-i="wa"></svg>Quero o plano Meta Ads</a>
       </article>
 
       <!-- Google Ads -->
@@ -459,8 +452,6 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
           <li class="bonus-li"><svg data-i="globe"></svg><span>Site grátis em parcerias a partir de 3 meses, válido durante toda a parceria</span></li>
         </ul>
         <div class="verba"><b>Verba recomendada:</b> mínimo de R$ 500/mês em anúncios. Pode ser dividida em depósitos semanais.</div>
-        <div class="vagas"><i></i>1 vaga disponível</div>
-        <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar o plano Google Ads de R$ 597/mês." style="margin-top:14px"><svg data-i="wa"></svg>Quero o plano Google Ads</a>
       </article>
 
       <!-- Completo -->
@@ -480,8 +471,6 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
           <li class="bonus-li"><svg data-i="globe"></svg><span>Site grátis em parcerias a partir de 3 meses, válido durante toda a parceria</span></li>
         </ul>
         <div class="verba"><b>Verba recomendada:</b> mínimo de R$ 500/mês em cada plataforma. Pode ser dividida em depósitos semanais.</div>
-        <div class="vagas"><i></i>1 vaga disponível</div>
-        <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar o plano completo, Meta Ads e Google Ads, de R$ 797/mês." style="margin-top:14px"><svg data-i="wa"></svg>Quero o plano completo</a>
       </article>
     </div>
 
@@ -533,7 +522,7 @@ footer img{height:46px;width:auto;margin:0 auto 12px}
     <div class="close lcard rv">
       <div class="jh"><img src="img/logo-jh-nova.jpg" alt="JH Company"></div>
       <h2>Vamos fechar <span class="hl">nossa parceria?</span></h2>
-      <p class="lead">Escolha o plano e fale direto com o gestor responsável. As vagas são limitadas, então feche enquanto elas estão disponíveis.</p>
+      <p class="lead">Escolha o plano e fale direto com o gestor responsável.</p>
       <a class="btn wa" href="#" target="_blank" rel="noopener" data-msg="Olá, tudo bem? Estive olhando a proposta comercial e quero fechar a parceria com a JH Company."><svg data-i="wa"></svg>Quero fechar a parceria</a>
       <p class="small">Atendemos negócios de todo o Brasil.</p>
     </div>
@@ -598,7 +587,12 @@ document.querySelectorAll('.carousel .track').forEach(function(t){
     function half(){ var k=t.children; if(k.length<2) return t.scrollWidth; return k[k.length/2].offsetLeft-k[0].offsetLeft; }
     function wrap(){ var h=half(); if(!h) return; if(st.pos>=h) st.pos-=h; else if(st.pos<=0) st.pos+=h; w.scrollLeft=st.pos; }
     function tick(){
-      if(st.paused||st.drag){ st.pos=w.scrollLeft; }
+      if(st.paused||st.drag){
+        // deslizado com o dedo ou arrastado: segue a posição real e mantém o loop
+        st.pos=w.scrollLeft;
+        var hh=half();
+        if(hh){ if(st.pos>=hh){ st.pos-=hh; w.scrollLeft=st.pos; } else if(st.pos<=0){ st.pos+=hh; w.scrollLeft=st.pos; } }
+      }
       else { st.pos+=st.speed; wrap(); }
       requestAnimationFrame(tick);
     }
